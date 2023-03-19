@@ -102,6 +102,10 @@
         border-top: none;
     }
 
+    table, th, td {
+        border:1px ridge black;
+    }
+
 
 
 </style>
@@ -119,10 +123,10 @@
     <button class="tablinks" onclick="openTab(event, 'Connect')">Connect</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Fight')" id="defaultOpen">Fight</button>
+    <button class="tablinks" onclick="openTab(event, 'Fight')">Fight</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Govern')">Govern</button>
+    <button class="tablinks" onclick="openTab(event, 'Govern')" id="defaultOpen">Govern</button>
 </div>
 <div class=tab>
     <button class="tablinks" onclick="openTab(event, 'Inspire')">Inspire</button>
@@ -3086,6 +3090,912 @@ anyone - her enemy need not be a creature of the Darkness.</p>
     <p><b>Drawback: </b> Once this Charm is active the Princess must fight to the death - she simply cannot
         conceive of not fighting for as long as one foe remains standing. The Princess also gains the Invocation
         Lock condition keyed to Tempesta.</p>
+</div>
+
+<div class="bottomline"></div>
+</div>
+
+<div id=Govern class="tabcontent">
+<p>The Govern Charms control supernatural powers and those who possess them. Graces and Seekers have
+    affinity for them.</p>
+
+    <button type="button" class="collapsible">Consecrate (Govern •)</button>
+    <div class="content">
+        <p><b>Action:</b> Extended - teamwork<br>
+            <b>Dice Pool:</b> Presence + Expression (10 minutes/roll, threshold = variable)<br>
+            <b>Cost:</b> 3 Wisps<br>
+            <b>Duration:</b> special
+        </p>
+        <p>The Princess blesses the ground she stands on, and dedicates it temporarily to her Queen and the Light.
+            By using this Charm a Princess applies the Consecrated condition to the area until the Charm ends.
+            Many Charms, distinguished as such in their description are more durable or effective when invoked
+            upon consecrated groups. The Princess needs to cleanse and purify every part of the area she wishes
+            to sanctify; this can be as simple as giving it a thorough spring cleaning, or it can be an elaborate rite
+            for casting out evil spirits, depending on the Princess’ cultural background. However, if she applies an
+            Invocation, the method of purification invokes the relevant Queen and must use symbols appropriate for
+            her.</p>
+        <p>Consecrating a large area is naturally harder than a small one, Consecrate is a Sanctuary based
+            Charm.</p>
+        <div class="failsucc">
+            <i>Dramatic Failure:</i> The Princess ruins the area’s blessing - all her accumulated successes are lost, and
+            if the area has the Consecrated condition immediately loses it. No one can use Consecrate there for a
+            full month.<br>
+            <i>Failure:</i> The Princess makes no progress, but may continue her efforts.<br>
+            <i>Success:</i> The Princess progresses in her work. When she reaches the threshold, the area gains the
+            Consecrated condition and retains it for 1 day. The Princess may continue working to extend the
+            Charm’s duration:<br>
+            2 * Sanctuary Size = 1 day<br>
+            4 * Sanctuary Size = 1 week<br>
+            6 * Sanctuary Size = 1 month<br>
+            8 * Sanctuary Size = 1 year<br>
+            10 * Sanctuary Size = indefinite<br>
+            <i>Exceptional Success:</i> The Princess makes great progress.
+        </div>
+        <p>If an area is already Consecrated, Consecrate will not take effect until the Princess reaches enough
+            successes to exceed the remaining duration of the previous Consecration. (For instance, if an area will
+            be Consecrated for five days, the Princess must reach enough successes for a week’s duration, after which
+            the area will be Consecrated for a week.) If any part of an area is Tainted, the Charm automatically
+            fails. Consecrate ends if the area suffers major alterations or damage, or someone manages to bring Taint
+            into it.</p>
+        <p>If the Princess has access to gems created by the Charm Enduring Beauty she can use them to
+            empower Consecrated ground, extending the duration of the protection. A gem worth Resources three
+            increases the duration by one step (so 2 * the area’s size successes creates a duration of 1 week). A
+            gem worth Resources five increases the duration by two steps. It takes five gems worth Resources one to
+            increase the duration by one step. Multiple gems may be combined for a greater effect but the required
+            successes can can never drop below 2 * the area’s size. Naturally the duration cannot be increased past
+            indefinite.</p>
+        <p>Gems used to empower Consecrated Ground must be reworked into part of the ground, becoming
+            beautiful statues, stained glass windows or other features. This happens as part of the Charm. They
+            must be displayed prominently but can be protected by any anti-theft measure that doesn’t spoil their
+            beauty. If even one of these reworked gems is removed from the Consecrated ground the Charm ends.
+            Once the gems are transformed happens they can never again be used to enhance magic, however they
+            are still beautiful and may be worth money as works of art, and they can still be used to return beauty
+            to whomever it was taken from.</p>
+        <p>Making use of Consecrated ground that is built on stolen beauty is a Belief Compromise, unless
+            there is good evidence to suggest that the beauty was taken consensually. There is no modifier for the
+            Compromise roll.</p>
+        <p><b>Upgrade: Purifying</b><br>
+            The Princess may apply the Consecrated condition on top of Taint. The Taint will always overcome
+            this Charm given enough time, but it can allow the Princess some vital breathing space. Invoke
+            Consecrate like normal, but increase the required Successes by the Taint’s Severity then:<br>
+        <ul>
+            <li>The Taints’ Curses go dormant.</li>
+            <li>The Taint will not attempt to Corrupt nor will it affect characters with sensitivity.</li>
+            <li>The Taint no longer provides access to and from the Dark World.</li>
+            <li>The Taint remains vulnerable to any technique that might purify it.</li>
+        </ul>
+        However once per day reduce the Princesses Successes by the Taint’s Severity. When her Successes
+        are reduced to zero or when the duration expires, as measured by her unmodified Successes, the
+        Consecrated condition ends and the normal effects of Taint return. The Princess may invoke Consecrate
+        again to add additional Successes, but this only delays the inevitable.</p>
+        <p>Purifying only protects against the existing Taint, new Taint will end the effects.</p>
+        <p><b>Upgrade: Bastion</b><br>
+            Several charms have special benefits when cast upon Consecrated ground. When Consecrate is invoked
+            with Bastion another benefit is added: Charms that benefit from the Consecrated condition are immune
+            to being dispelled (such as by the Charm Unweaving) for as long as the condition remains.</p>
+        <p>It is important to note that Consecrate itself can be dispelled and this Upgrade offers no protection
+            against that.</p>
+    </div>
+
+    <button type="button" class="collapsible">Reflected Light (Govern •)</button>
+<div class="content">
+    <p><b>Action:</b> Permanent<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> none<br>
+        <b>Duration:</b> Permanent
+    </p>
+    <p>The Princess gains the benefits of the Unseen Sense merit for all supernatural phenomena within 10 x
+        Inner Light yards. Any being with a Rank or Supernatural Advantage trait will trigger her sense upon
+        stepping within Inner Light x 10 yards of the Princess, and any active use of their powers will trigger
+        her sense again. A Mortal with Supernatural Merits or a template that doesn’t grant a Supernatural
+        Advantage (such as Sworn) will not trigger her sense, but active use of their abilities will do so.</p>
+    <p>The Princess may roll Wits + Empathy reflexively when her sense is triggered, and may apply an
+        Invocation to this roll. If she sensed something of the Light or the Darkness, success identifies the power
+        as of the Light or the Darkness. For other powers the Princess must learn about the nature of the power
+        through research or investigation. So if a Princess felt a power belonging to a Vampire she could tell
+        that it was the same kind of power as every other use of a Vampire’s power she previously felt. But she
+        would not know that all these powers belonged to Vampires without investigating.</p>
+    <p>If the character using the power has the ability to conceal itself from supernatural detection, then
+        the Princess must overcome that concealment as per the usual rules.</p>
+    <p><b>Upgrade: Sensitive</b><br>
+        Double the range of the Princess’ Unseen Sense, to 20 x Inner Light yards.</p>
+    <p><b>Upgrade: Light-attuned</b><br>
+        The Princess recognizes individual powers springing directly from the Light; when she rolls to identify
+        a Charm, she learns the exact Charm along with any Upgrades and which Invocation, if any, was
+        applied.</p>
+    <p><b>Upgrade: Dark-attuned (Tempesta •)</b><br>
+        The Princess recognizes individual powers springing directly from the Darkness; when she rolls to
+        identify an Umbra or Caligo, she learns the specific power, not just “power from the Darkness”. If
+        the Storyteller rules that other supernatural entities draw powers from the Darkness; the Princess can
+        identify any such powers.</p>
+</div>
+
+<button type="button" class="collapsible">Dreaming Sight (Govern •)</button>
+<div class="content">
+    <p><b>Action:</b> Reflexive<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>The Princess can see into Twilight to perceive natives of the Dreamlands who have escaped to the waking
+        world, along with similar phenomena like astrally projecting psychics. With a Successful Perception roll
+        she can notice Manifestation Conditions related to a Dreamlanders in her vicinity (If playing a crossover
+        with Mage: the Awakened, remember that native Dreamlander is the Nobility’s term for Goetica).
+        Physical objects still block her sight, so a Dreamlander can hide behind - or inside - such objects to
+        evade her.</p>
+        <p><b>Upgrade: Granted</b><br>
+            By touching the eyes of another the Princess may bestow the benefits of this Charm upon them with
+            an Instant Action.</p>
+        <p><b>Upgrade: Touching</b><br>
+            By spending an additional Wisp, the Princess shifts her flesh partly into Twilight, allowing her to touch
+            or attack Dreamlanders, and they her, until the Charm ends. All of her regalia (including weapons
+            and armour) are carried into this state with her, as are the effects of Charms. If the Princess has Spirit
+            Sight or Second Sight she may choose any combination of Dreamlanders, Spirits or Ghosts (along with
+            their related phenomina) to apply Touching too when she activates the Charm.</p>
+        <p><b>Upgrade: Spirit Sight (Legno •)</b><br>
+            One of the Wilds may attune herself to the presence of spirits.
+            The Princess sees spirits in Twilight Form, and can make Perception rolls to notice Manifestation
+            Conditions related to a spirit, or the presence of a locus [GMC 220] and related phenomena.</p>
+        <p><b>Upgrade: Second Sight (Lacrima •)</b><br>
+            A follower of Tears can part the veil and see into the great beyond. If she applies Lacrima instead of
+            spending a Wisp, the Princess sees ghosts in Twilight Form and structures made of ghostly ephemera,
+            and can make Perception rolls to notice Manifestation Conditions related to a ghost, a ghost’s Anchor
+            or an Avernian Gate [GMC 226] and related phenomena and related phenomena.</p>
+</div>
+
+<button type="button" class="collapsible">Study Inheritance (Govern •)</button>
+<div class="content">
+    <p><b>Action:</b> Extended<br>
+        <b>Dice Pool:</b> Intelligence + Empathy (5 minutes/roll, threshold = Bequest’s Merit rating)<br>
+        <b>Cost:</b> none<br>
+        <b>Duration:</b> Instant
+    </p>
+    <p>The mysteries of the Kingdom’s relics can be unveiled. The Princess uses this Charm on a transformed
+        Bequest; when she reaches the threshold, she discovers what Charm the Bequest is based on, the cost of
+        activating it, whether it carries a pool of Wisps, if it is empowered, and the duty one must carry out to
+        refill the pool.</p>
+</div>
+
+<button type="button" class="collapsible">Charge (Govern ••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> none<br>
+        <b>Duration:</b> Lasting
+    </p>
+    <p>The Princess may transfer some of her own Wisps to to another. She and the target must be physically
+        near to each other, as a rule of thumb they need to be within shouting distance, and the Princess must
+        be able to create an emotional reaction, no matter how small. Once both conditions are satisfied the
+        Princess wills her magic to travel and it does so, in a glowing, sparkling bolt of energy, filling the target’s
+        emotional reaction with magical power.</p>
+    <p>The Princess can also transfer Wisps into an object, providing it has a Wisp Pool. This is harder,
+        and requires the Princess to touch the target object.</p>
+    <p>Transferring a Wisp through Charge counts as spending a Wisp when measuring against a Princess’
+        Wisp per turn limit, and she cannot give more Wisps than the target can hold.</p>
+    <p><b>Upgrade: Accepted</b><br>
+        The Princess may take Wisps from other people, if they are willing to give them. If the target consents,
+        the Princess may use this charm in reverse to draw wisps into herself. Inanimate objects like Bequests
+        are obviously unable to give consent to anything.</p>
+    <p><b>Upgrade: Distant</b><br>
+        <b>Cost: </b>+1 Wisp<br>
+        The Princess may use the Charm on people who are not present. She spends a Wisp and rolls Presence
+        + Empathy - Intimacy, and may apply an Invocation to the roll. If she succeeds she creates a magical
+        link through which she can transfer Wisps, this link lasts for a scene. If the Princess has Accepted,
+        she can take Wisps through this link as well.
+    </p>
+    <p><b>Upgrade: Sweet Dreams</b><br>
+        The Princess can convert between Wisps and Astral Essence at a 1:1 ratio, in either direction, she may
+        also use Charge and all its Upgrades on a Dreamlander. Princesses cannot store Essence - she must
+        converted Wisps into Essence before offering it to a Dramlander, and transform any Essence received
+        into Wisps.</p>
+    <p>As there are an awful lot of Dreamlanders with Essence pools and loyalty to a Queen and her Court
+        the Storyteller should be careful not to let the Dreamlands become an infinite source of free Wisps.
+        Running low on Wisps is one of the ways Princess: the Hopeful can give mechanical heft to the
+        Mood of Exhaustion. But at the same time, when it’s dramatically appropriate one good night’s sleep
+        recharging the player characters can be a big part of portraying exhaustion. Use your judgement and
+        everything should be fine.</p>
+    <p><b>Upgrade: Stolen (Lacrima ••)</b><br>
+        Requires: <i>Accepted</i><br>
+        <b>Cost: </b>Compromise at Belief 4+ with a -3 modifer<br>
+        The Princess can take Wisps from unconsenting people. She must roll Presence + Intimidation -
+        Composure and cannot Transfer more Wisps per turn than her Successes. Stolen cannot be combined
+        with Distant
+    </p>
+    <p><b>Upgrade: In Memorium (Lacrima ••)</b><br>
+        The Princess can convert between Wisps and Ghostly Essence at a 2:1 ratio, in either direction, she
+        may also use Charge and all it’s Upgrades on a Ghost. Princesses cannot store Essence - she must converted Wisps
+        into Essence before offering it to a ghost, and transform any Essence received into
+        Wisps.</p>
+    <p><b>Upgrade: Significance (Legno ••)</b><br>
+        The Princess can convert between Wisps and Spiritual Essence at a 2:1 ratio, in either direction, she
+        may also use Charge and all it’s Upgrades on a Spirit. Princesses cannot store Essence - she must
+        converted Wisps into Essence before offering it to a Spirit, and transform any Essence received into
+        Wisps.</p>
+</div>
+
+<button type="button" class="collapsible">Gold Abhors Ebon (Govern ••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant and Contested<br>
+        <b>Dice Pool:</b> Presence + Intimidation vs. Resolve + supernatural advantage<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>Invoking the Light’s authority, the Princess drives off a being of the Darkness. If the Princess wins the
+        contest, the target becomes irrationally afraid of her for the duration; gaining the Terrified Tilt.</p>
+    <p><b>Upgrade: Ruling</b><br>
+        Inhuman monsters must acknowledge the Princess’ authority. She may use the Charm on non-human
+        supernatural beings, such as ghosts and spirits.</p>
+    <p><b>Upgrade: Majestic</b><br>
+        Requires: <i>Ruling</i><br>
+        <b>Cost: </b> +1 Willpower
+        All those with power bow to the Light. The Princess may use the Charm on humans with supernatural
+        powers that aren’t derived from the Light. This includes anyone with a major or minor template, and
+        anyone with powers they would lose if they gained a template, except for Beacons, Sworn and Hopeful.
+    </p>
+    <p><b>Upgrade: Fearsome (Lacrima ••)</b><br>
+        <b>Cost: </b>Compromise at Belief 6+ with a -1 modifier
+        The Queen of Tears claims the right to rule all the world, mortals, Nobles and supernaturals alike.
+        The Princess may use the Charm on humans without supernatural powers, and on Beacons, Sworn
+        and other Princesses.
+    </p>
+</div>
+
+<button type="button" class="collapsible">Light Over All (Govern ••)</button>
+<div class="content">
+    <p><b>Action:</b> Permanent<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> none<br>
+        <b>Duration:</b> Permanent
+        </p>
+    <p>Mortals may not be magical, but they can use magic. Some forms of magic used by mortals are impossible
+        for a Princess to perform, others are rendered obsolete, and then there are some types of magic that
+        Princesses find come even easier after they Blossom.</p>
+    <p>On the whole Princesses aren’t that great at working with or against Ephemeral Beings (Dreamlanders
+        excepted). The noble magic that affects such beings tends to be basic, with only obscure Embassies
+        mastering anything substantial. Ghosts are easier to work with but to learn Charms that affect Ghosts
+        she would have to first become a practitioner of Lacrima, even though Lacrima’s Ghost Charms do not
+        compromise Belief few among the Radiant are willing to take that step.</p>
+    <p>So if Princesses want to deal with an Ephemeral Being they’ll either call the Embassy, or they’ll turn
+        to the same tricks that mortals use (see GMC p230). It is fortunate then, that a Princess’ own magic
+        can reinforce mortal techniques, with Light over All she can apply an Invocation to the rolls.</p>
+    <p>In addition, the following dice bonuses and penalties apply, based on the entity:</p>
+    <p>
+        &emsp;+3: The entity was never human, and is anathema to humanity (Some creatures of the Darkness)<br>
+        &emsp;+1: The entity was never human, but is not anathema to humanity; or was human, but thinks
+        nothing like a human (most Spirits and Dreamlanders, some ancient Ghosts)<br>
+        &emsp;+1: The Princess is cleansing a Tainted Place<br>
+        &emsp;-1: The entity was once human, and still thinks in somewhat human ways (Ghosts, some
+        Dreamlanders)<br>
+        &emsp;-3: The entity is human, and thinks like a human<br>
+    </p>
+    <p><b>Upgrade: Blood Magic (Tempesta •)</b><br>
+        During any roll where Light over All applies, the Princess may take a point of resistant bashing damage
+        to add +3 to one roll.</p>
+</div>
+
+<button type="button" class="collapsible">Seed of Light (Govern ••)</button>
+<div class="content">
+    <p><b>Action:</b> Extended<br>
+        <b>Dice Pool:</b> Dexterity + Expression ((20 - Willpower) minutes/roll, threshold = 3 * seeds made)<br>
+        <b>Cost:</b> 1 Willpower, 1+ Wisps (special)<br>
+        <b>Duration:</b> Lasting
+    </p>
+    <p>The Light exists within the world, within the hearts of all men. However, with will and effort, the
+        Hopeful may calcify Wisps into gem-sized, imperishable Seeds, proof against the ravages of chance. Each
+        Wisp spent on the Charm forms a separate Seed. The Princess does not have to decide how many Seeds
+        to calcify beforehand; after spending the Willpower, she starts to concentrate on her pool of Wisps. Each
+        three successes accumulated allows the Princess to transform one Wisp into a Seed, and she may roll a
+        number of times equal to her dice pool, or until she runs out of Wisps. Extra successes are wasted.</p>
+    <p>The shape of a Seed is a profound expression of its creator’s soul, and is heavily influenced by the
+        Invocation (if any) applied in its making. (Applying Legno, for instance, often creates Seeds in the form
+        of living, unchanging flowers.) Any character examining a Seed, if they make a Wits + Occult roll, can
+        recognize a Seed as coming from the same hand as one they’ve seen before (Invocations are usually clear
+        without a roll).</p>
+    <p>To recover the Wisp from a Seed, a character must bring it into contact with their phylactery, and
+        spend a minute in concentration. No actions may be performed while doing this, and the character is at
+        -3 to all Wits-based rolls, so deep is their focus. The Seed glows, and becomes incohesive, melting into
+        their soul, and adding the Wisp to their pool. If the character’s Wisp pool is full, the Seed vaporizes
+        and releases the Wisp into the air, where it dissipates.</p>
+    <p>As tiny fragments of solidified Light, Seeds are incredibly alluring to creatures of the Darkness. Any
+        character with the Darkened template can consume Seeds to regain Willpower, gaining one point of
+        Willpower per Seed eaten. The Darkened can smell out Seeds kept in quantity - they gain a cumulative
+        +1 bonus to all Perception rolls to notice a person carrying Seeds for each Seed above the carrier’s
+        Composure, and tend to aim first at opponents carrying the most Seeds. Moreover, any location where
+        large numbers of Seeds are stored can be noticed for miles. For this reason, Alhambran outposts tend
+        to either be very heavily protected, or to try to move their ill gotten gains back to their rain-soaked city
+        as fast as possible. And for the same reason, servants of the Queen of Storms have been known to use
+        captured Seeds as Darkspawn bait.</p>
+    <p><b>Upgrade: Bereaved (Lacrima •••)</b><br>
+        The production of Seeds by Alhambrans occurs on an industrial scale. Reduce the time per roll to
+        once per turn.</p>
+    <p>As a side effect of applying this Upgrade, the character removes the unique traces of their identity
+        from the Seeds they make. Instead, the Seed forms as one of the seals of the Kingdom, the crown
+        of the Queen of Tears prominent on it. The production of such a Seed is frequently used as a test
+        of identity by an Alhambran outpost sent a new Noble, and documents and packages sent between
+        groups are sealed with wax imprinted with this mark. This leaves unmistakable magical traces, which
+        a character with Lacrima 1 or higher, or the ability to see auras, can detect with a Wits + Occult roll,
+        making forging the seal harder.</p>
+    <p><b>Upgrade: Militant (Tempesta •• or Fuoco •••)</b><br>
+        One cannot simply wait for the Light to diffuse into one’s soul! All of existence is a war against the
+        Darkness, and no soldier of the Seraphic General should be caught without her arms! When creating the Seed, the Noble may choose to make it release its energy quickly. If Tempesta was applied, the
+        Wisp can be recovered from the Seed as a reflexive action, at a cost of 1 resistant Bashing damage,
+        with no more than skin contact with the Seed. There is no limit to how many Seeds can be tapped in
+        this way per round, beyond the limits of one’s well-being.</p>
+    <p>The followers of the Queen of Swords are less rash, but no less aware of the dangers of the world. By
+        applying Fuoco, they create Seeds that release their Wisp as an instant action.</p>
+</div>
+
+<button type="button" class="collapsible">Safety in Mortality (Govern ••)</button>
+<div class="content">
+    <p><b>Action:</b> Full turn<br>
+        <b>Dice Pool:</b> Resolve + Intimidation<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 scene (consecrated)
+    </p>
+    <p>A Princess is as much a being of mortality as she is of the Light. Just as the Transformation allows
+        her to switch between these worlds she may push these changes outwards, creating a safe space through
+        which magic cannot enter. The Charm is used on an enclosed space, such as a building or a fenced park
+        - if the Princess needs to protect an area that isn’t enclosed, she must mark its border somehow, by (for
+        instance) drawing a chalk line or throwing down a rope. The area must not extend more than (Inner
+        Light x 20) yards in any direction, unless the area is Consecrated.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess makes herself vulnerable to others’ magic. Any supernatural power
+        that is normally resisted, when used on her, gets a +1 bonus on its activation roll for 1 day.<br>
+        <i>Failure:</i> The area gains no protection.<br>
+        <i>Success:</i> The Princess applies the Warded condition to the target area for one scene; any attempt to
+        direct magic from outside to inside the protected space triggers a Clash of Wills against the Princess’
+        Clash of Wills dicepool at the point this Charm was invoked, and the Princess is aware of any such
+        attempts. If this Charm was invoked as a teamwork action the Primary Actor’s Clash of Wills dicepool
+        is used, but all participants are aware of any attempts to breach the Wards. If the enclosed space has
+        the Consecrated Condition, the Charm lasts until the area is no longer Consecrated and the Warded
+        Condition extends to cover the complete Consecrated are.<br>
+        <i>Exceptional Success:</i> The Charm’s protection lasts for a full day.
+    </div>
+</div>
+
+<button type="button" class="collapsible">Light's Riposte (Govern •• Fuoco •)</button>
+<div class="content">
+    <p><b>Action:</b> Reactive and Resisted<br>
+        <b>Dice Pool:</b> Wits + Occult - target’s Stamina<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> instant
+    </p>
+    <p>Those who cast hostile magics at the Princess shall suffer for their temerity. When she is the target of
+        a supernatural effect that she recognizes as such, she may activate the Charm. For each success rolled,
+        the magic’s user takes 1 bashing damage. This may be done only once per effect.</p>
+    <p><b>Upgrade: Lethal (Fuoco ••)</b><br>
+        <b>Cost: </b> +1 Wisp<br>
+        The Princess’ rebuke grows harsher; for each success rolled, the target takes 1 lethal damage.</p>
+</div>
+
+<button type="button" class="collapsible">A Magical Girl's Eyes (Govern •••)</button>
+<div class="content">
+    <p>Requires: <i>Reflected Light</i><br>
+        <b>Action:</b> Reflexive<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>In her Transformed identity a Princess is an inherently magical being. Her shining heart is comprised
+        of both muscle tissue and solid magic, her fingers are made of flesh and clever little enchantments, her
+        eyes, those are magic too. By spending a Wisp the Princess can see (or smell, or taste or somehow
+        sense) magic. This includes both magical beings, magical items or places, and the presence of lasting
+        magical enchantments. This sense extends as far as she can see with her eyes and can be enhanced with
+        binoculars, a telescope or remote vision Charms, but not over a television or camera.</p>
+    <p>By rolling Intelligence + Empathy (for a Princess’ magic), Science (for a mad scientist’s work), or
+        Occult (for anything else) the Princess can also determine what kind of magic she is looking at. She may
+        apply an Invocation to this roll. However the Princess cannot see in any detail. At best she might get
+        something like “it looks angry” when looking at a werewolf or a werewolf’s spell. If the Princess sees the
+        same kind of magic again she can recognise the similarity; to the normal limits of her memory. If the
+        Princess learns that the angry looking person is a werewolf she can conclude that all the other people or
+        enchantments with the same angry look are also werewolves or their creations.</p>
+    <p>If she is looking at an active magic effect or magical item she can determine its purpose to a similar
+        level of detail, such as “protect this building”. If the Princess has the Reflected Light upgrades Light
+        Attuned or Dark Attuned she gains their benefits when using Magical Girl’s Eyes, if she has Study
+        Inheritance then she only needs to look at a Bequest to learn it’s particulars. As with all uses of vision
+        this power is less effective over distance, as a rule of thumb the Princess’s ability to analyse magic fades
+        with distance at the same rate as her ability to recognise faces.</p>
+    <p>This Charm provides no ability to see into Twilight, though if the Princess has some other means of
+        seeing into Twilight it will apply to it’s full extent upon the residents of that plane. If the enchantment
+        itself is constructed to be hidden from poking and prying, or if the enchantment conceals things such as
+        by making them invisible the Princess may roll a Clash of Wills to overcome such deceptions.</p>
+</div>
+
+<button type="button" class="collapsible">Astral Companion (Govern •••)</button>
+<div class="content">
+    <p><b>Action:</b> Extended<br>
+        <b>Dice Pool:</b> Inner Light + Presence (10 minutes/roll, threshold = 3x Dreamlander’s Rank or
+        Inner Light)<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 day or Presence days
+    </p>
+    <p>Every Princess can bind herself to a Shikigami, but some Princesses know other ways to invite
+        Dreamlanders to Earth. A Princess with this Charm travels to the Dreamlands and brings a willing
+        Dreamlander back to the threshold of waking, where it can be activated - a task quite similar to binding
+        one’s Shikigami, though the Charm does not require a vessel (or allow for one).</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess wakes without bringing the Dreamlander with her; she cannot use the
+        Charm on him again.<br>
+        <i>Failure:</i> The Princess makes no progress. If she stops rolling before reaching the threshold number,
+        she wakes without bringing the Dreamlander with her.<br>
+        <i>Success:</i> The Princess makes progress. When she reaches the threshold number, she wakes, and brings
+        the Dreamlander with her in an immaterial state. The Dreamlander gains the Fettered Condition, it is
+        tied to the Princess. When the Charm expires the Dreamlander does not have to worry about Influences
+        or Manifestations, lingering magic means that it can spend one Essence to renew the Condition for
+        another day or travel through the Princess’ Crawlspace to return home.<br>
+        <i>Exceptional Success:</i> The Princess makes great progress. The Dreamlander’s stay in the waking world
+        is prolonged; the Charm lasts for Princess’ Presence in days.
+    </div>
+    <p>When summoned to waking life by this Charm, Dreamlanders’ powers are somewhat limited. See the
+        Appendix on the Dreamlands for full rules governing Dreamlanders.</p>
+    <p><b>Upgrade: Vesseled</b><br>
+        <b>Cost: </b> +1 Willpower<br>
+        The Princess can bind Dreamlanders into physical vessels, allowing them to affect the physical world
+        without worrying about Manifestations for the duration of the Charm. Mechanically this can be
+        treated as a Shikigami without a bond to any Princess (unless they acquire one later of course). At
+        the cost of a Willpower Dot the Shikigami binding can be made to last Indefinitely, allowing the
+        Shikigami to remain on Earth without a Noble’s support or the need to use Manifestations upon a
+        living being. Shikigami who receive this boon may travel too and from the Dreamlands in their sleep
+        and may form and break the Shikigami bond with Nobles without risking their new body.
+    </p>
+    <p><b>Upgrade: Dreaming Exile (Specchio ••)</b><br>
+        <b>Cost: </b> +1 Wisp and 1 Willpower<br>
+        The Noble can bind a Dreamlander into the body of a human. In essence she grants the Dramlander
+        one use of the Greater Possession Manifestation (identical to Possession, save that it’s duration is
+        indefinite) on a target of her choosing. This allows the Dreamlander to bypass the need for any
+        Manifestation Conditions.
+    </p>
+    <p>If the Princess is in the Dreamlands she can use this to give herself (or another Dreaming Princess)
+        access to the Greater Possession Manifestation, but she will need to use the Charm Ivory Gate along
+        with Dream of Me to target a physical body while in the Dreamlands. In short, she must use the same
+        methods as an Amanojaku.</p>
+</div>
+
+<button type="button" class="collapsible">Bequeath (Govern •••)</button>
+<div class="content">
+    <p><b>Action:</b> Extended<br>
+        <b>Dice Pool:</b> Inner Light + Crafts (10 minutes/roll, threshold = 3x Bequest’s Merit rating)<br>
+        <b>Cost:</b> 1 Wisp/roll, 1 Willpower point or 1 Willpower Dot, potentially one Charm<br>
+        <b>Duration:</b> Session or Indefinite
+    </p>
+    <p>The Princess binds the form of a Charm into a physical vessel, creating a new Bequest. Before a
+        Princess can invoke Bequeath she needs to acquire an item of power by undertaking a quest through her
+        Crawlspace or the Dreamlands. When she has found the form in the Dreamlands, and has a suitable
+        vessel with her sleeping body, she carries the form into her Crawlspace, and standing at the threshold
+        between wakefulness and dreams begins casting Bequeath.</p>
+    <p>If the Princess spends a Willpower point the Bequest will last for a Session, however if she spends a
+        full Willpower Dot then Bequest lasts Indefinitely.</p>
+    <p>Bequeath cannot be used by Sworn or Beacons even if it itself is crafted into a Bequest. The
+        production of new tools for the Radiant is limited by the Willpower of it’s Nobility.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess wakes without transforming the vessel. She can never make the target
+        Charm into a Bequest.<br>
+        <i>Failure:</i> The Princess makes no progress.<br>
+        <i>Success:</i> The Princess makes progress. If she reaches the threshold, the Charm merges with and
+        transforms the vessel, becoming a new Bequest. If the Princess took the Charm from her Crawlspace
+        she looses access to it for the duration of the Charm. If the duration is Indefinite she immediately
+        regains any experience spent upon the Charm and can learn it again by re-training herself in the
+        Charm, she may also use some of that exp to immediately buy back the Willpower dot.<br>
+        <i>Exceptional Success:</i> The Princess makes great progress.<br>
+        Suggested modifiers: vessel resembles the Charm’s form (+1 to +3), vessel significantly unlike the
+        Charm’s form (-1 to -3)
+    </div>
+    <p>When creating a Bequest a Chosen can embed a gem created by Enduring Beauty as a source of
+        power. If she does so the Bequest has an equipment bonus to its activation roll equal to the Resources
+        value of the gem she used. She may trade two points of the equipment bonus to allow the Bequest to
+        generate 1 Wisp per day into it’s own pool. The Charm Study Inheritance will reveal the details of a
+        Bequest’s Empowerment but anyone with experience of Bequests will have little trouble figuring it out.</p>
+    <p>By pressing an Empowered Bequest to the forehead of the gem’s original owner, the owner’s beauty
+        may be restored; doing this destroys the Bequest beyond repair.</p>
+    <p>The question that haunts many Nobles is whether using such tools is an endorsement of their creation.
+        Knowingly using an Empowered Bequest, unless the Princess has reason to believe the Gem at its heart
+        was created consensually, is a Belief compromise. There is no modifier to the roll.</p>
+    <p><b>Upgrade: Charged</b><br>
+        The new Bequest carries a pool of 10 Wisps, which is initially empty. The Princess must define a duty
+        the Bequest’s owner can fulfill to fill its pool. Note that this adds a dot to the Bequest’s Merit rating,
+        raising the threshold.</p>
+</div>
+
+<button type="button" class="collapsible">Ofuda (Govern •••)</button>
+<div class="content">
+    <p><b>Action:</b> Extended, 5 minutes/roll, threshold = 4x strength<br>
+        <b>Dice Pool:</b> Presence + Crafts<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>The Princess imbues an object with the power to repel a type of supernatural beings.</p>
+    <p>The Princess begins by choosing the type of monster she wishes to repel, she may choose any type
+        of supernatural being she has encountered before or create a blanket prohibition against all Creatures of
+        the Darkness, and she chooses an object to enchant. Usually Ofuda are made from a photo or small scroll
+        of text symbolic to whatever it protects against. Then she rolls to create the Ofuda. If she Succeeds she
+        bestows the Ofuda Condition on the object: It will repel any of the target being within 2x Inner Light
+        Yards unless they succeed on a Resolve + Supernatural Tolerance - the Ofuda’s strength roll. Chance
+        dice are automatic failures, meaning that a Strength of 20, if a Princess could manage it, will provide
+        absolute protection against anything less powerful than a Queen.</p>
+    <p>If there is already an Ofuda in place the Princess may cast additional invocations of this Charm into
+        the same object to expand the Charm’s affects to more kinds of supernatural beings; if she does so she
+        only needs four successes.</p>
+    <p><b>Upgrade: Exemption</b><br>
+        The Princess may allow a number of trusted individuals, up to her Inner Light, to bypass her
+        protections. Alternately, by adding Commonalty to the roll she may allow a social group to enter
+        unbarred. The Princess may change who is permitted and who is not after the Ofuda is created by
+        casting Ofuda again while touching the imbued Item. This will not change the strength of the
+        defences.</p>
+    <p><b>Upgrade: Sanctuary</b><br>
+        The Princess may intertwine an Ofuda with Consecrated ground. This both extends its range to
+        cover the entire Consecrated area and extends the duration until the area no longer possesses the
+        Consecrated Condition or until the imbued object is destroyed.<br>
+        An Ofuda invoked with Sanctuary must be built into the physical structure of the Consecrated ground
+        it protects, even if only by nailing it to a wall. If it is removed from the Consecrated ground the
+        Charm ends. It’s minimum size is equal to Sanctuary Size.</p>
+    <p><b>Upgrade: Lasting (Legno ••)</b><br>
+        <b>Cost: </b>+2 Wisps<br>
+        <b>Duration: </b>4 x Inner Light hours<br>
+        The Princess’ Ofuda wards lasts for longer, instead of one scene they last for 4 x Inner Light hours.
+    </p>
+    </div>
+
+    <button type="button" class="collapsible">Royal Arbitration (Govern ••• Legno ••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Intelligence + Academics<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> lasting
+    </p>
+    <p>Many magical abilities, such as the Charm Royal Witness, bind people into magical contracts. And
+        when a contract is vague or made in bad faith it is the duty of the crown to arbitrate.</p>
+    <p>With this Charm the Princess may modify the terms of a magically binding contract but must remain
+        within the spirit of the original. If the contract specifies that a cleaner will clean a house every day in
+        exchange for money the Princess could modify the contract to allow the cleaner to take time of for illness
+        in exchange for reduced pay, or allow the cleaner to subcontract. She could add a clause saying the
+        cleaner cannot be hassled at work. But should could not rewrite things until the cleaner is paid for
+        nothing, paid to work as a carpenter, or working for nothing.</p>
+    <p>If the Princess has the consent of all parties she spends one Wisp. If one or more party is unreachable
+        or unwilling to renegotiate she also spends a point of Willpower and if the unconsenting party invested
+        magic into the contract the Princess must make a Clash of Wills.</p>
+    <p><b>Upgrade: Legal Limits (Terra •••)</b><br>
+        A contract isn’t a licence to enforce any terms against anyone. By appealing to a higher power such
+        as national law the Princess is free to make any changes that are required to bring the contract in line
+        with the regulations, up to and including nullifying the entire contract. The higher power the Princess
+        invokes must have clearly defined rules that govern contracts, and the Princess can only invoke a power
+        if she respects and lives by the rules it sets.</p>
+    <p><b>Upgrade: Scott Free (Aria •••)</b><br>
+        The Queen of Spades will say that if a promise must be enforced through automagical violence it’s
+        not worth anything at all. With this upgrade a Knave can nullify an entire contract. She may not
+        selectively nullify part of it.</p>
+</div>
+
+<button type="button" class="collapsible">Spirit's Friend (Govern ••• Legno ••)</button>
+<div class="content">
+    <p>Requires: <i>Light Over All</i><br>
+        <b>Action:</b> Instant and Contested<br>
+        <b>Dice Pool:</b> Manipulation + Persuasion vs. Resistance + Rank<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>The creatures from the spirit world are alien and dangerous, but they need not be hostile. The Charm
+        is used to influence a spirit.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Noble offends the spirit; it either attacks her or runs from her.<br>
+        <i>Failure:</i> The spirit is not influenced.<br>
+        <i>Success:</i> The spirit feels an attraction to the Noble. It takes the Swooned Condition [CofD 291] linked
+        to her, lasting until the Charm ends.<br>
+        <i>Exceptional Success:</i> The spirit is strongly attracted; the Swooned Condition lasts indefinitely.
+    </div>
+    <p><b>Upgrade: Resonant</b><br>
+        <b>Cost: </b> +1 Wisp<br>
+        The Noble’s person becomes attuned to the spirit’s Influence. As long as the spirit remains under the
+        Swooned Condition, the Noble is Resonant with it [CofD 135].</p>
+</div>
+
+<button type="button" class="collapsible">Publican (Govern ••• Lacrima ••)</button>
+<div class="content">
+    <p>Requires: <i>Charge</i><br>
+        <b>Action:</b> Instant and Resisted<br>
+        <b>Dice Pool:</b> Resolve + Politics - Sanctuary Size<br>
+        <b>Cost:</b> 2 to 6 Wisps, Compromise at Belief 4+ with a -3 modifier<br>
+        <b>Duration:</b> special
+    </p>
+    <p>All humanity ultimately owes allegiance to the Kingdom-which-is-Alhambra. Though they may not
+        follow their oaths, it is still possible to extract the taxes rightfully owed. Like most feudal kingdoms, in
+        Alhambra land is the defining symbol of wealth and the basic tax is on property rather than income.
+        Publican allows Alhambra to drain Wisps out of the very soil, but at a terrible cost.</p>
+    <p>Before casting Publican the user must choose the Size of the estate they wish to tax, as per the
+        Sanctuary Size scale. A success inflicts the Property Tax condition, draining Wisps from the land. At
+        first the process is slow, but as Wisps come loose it becomes significantly faster. Every week the land
+        produces (Size * weeks active) Wisps. On a Blessed place double the Wisps produced.</p>
+    <p>The cost in Wisps is 1 + Sanctuary Size of the area affected, so barring a Blessed Place it requires at
+        least two weeks for Publican to turn a profit. Alhambrans nearly always scout extensively and prepare an
+        enclave to monitor and protect their efforts; Publican requires daily maintenance, this costs nothing but
+        requires fifteen minutes of work by someone who knows the Charm (or has a Bequest). The Unweaving
+        Charm can also stop Publican in it’s tracks.</p>
+    <p>Anyone who knows the Publican Charm can also gather the Wisps it creates, they must stand
+        inside the affected area and may gain up to Lacrima wisps every five minutes. Bequests containing
+        Publican can refill their own pool or their user’s Wisp pool.</p>
+    <p><b>Drawback: </b>Draining the Light from the land ruins it. At the end of each week roll the Wisps produced.
+        A Success removes one point of Beauty or inflicts one point of Taint, what is left behind after Alhambra
+        steals all which is good. Once there is at least 10 points of Taint there is little left to gain, the Condition
+        ends 24 hours later and any ungathered Wisps are lost.</p>
+    <p>Alhambra survives by stealing hope itself from the world, and the Curses of the Tainted place should
+        reflect that. Curses of Corruption, Willpower, and Resolve are fitting but this is not a rule. If the symbol
+        of hope in a community is a new factory that’s revitalising the economic perhaps penalise Crafts instead.
+        Publican itself only creates one focus but more can form quickly if cruel acts are committed within the
+        borders.</p>
+    <p><b>Upgrade: Supply Line</b><br>
+        Requires: <i>Seed of Light</i>, <i>Bereaved</i><br>
+        When the Princess gathers Wisps exposed by Publican she does not add them to her pool, instead
+        each Wisp becomes a Seed of Light.</p>
+</div>
+
+<button type="button" class="collapsible">Purgation (Govern ••• Tempesta ••••)</button>
+<div class="content">
+    <p><b>Action:</b> Extended<br>
+        <b>Dice Pool:</b> Resolve + Intimidation (5 minutes/roll, threshold: 7 Successes)<br>
+        <b>Cost:</b> 1 resistant Aggravated damage, 2 Wisps<br>
+        <b>Duration:</b> Lasting
+    </p>
+    <p>The Princess invokes the power of the Queen of Storms to scour away the Darkness with blood. To use
+        Purgation, the character cuts herself and drips blood from the cut onto a Tainted area. As she continues
+        to invoke Purgation the blood writhes and boils, channelling the endless fury of the Queen of Storms.
+        When she reaches the Threshold the her blood immediately catches alight with green fire.</p>
+    <p>The green fire that is created by this Charm is mostly mundane. It spreads or dies like an ordinary
+        fire, it does however burn in both the Tainted Place and the Dark World beneath it. The fire created by
+        Purgation begins with the size and heat of a torch, however it consumes Taint with unbridled ferocity
+        and is likely to spread and grow quickly. Against creatures of the Dark or the physical structure of the
+        Tainted place it burns with the heat of molten metal and the physical structure of a Tainted Place is
+        treated as though it were as flammable as dry straw: Metal, asbestos, even water, if it’s part of a Tainted
+        Place the fires of Purgation will burn it and leave behind nothing but ashes. Unless someone intervenes
+        to stop the fire a single invocation of Purgation can destroy even the largest Tainted Place without much
+        issue.</p>
+    <p>If Purgation is invoked outside a Tainted Place it creates a mundane orange fire with the size and
+        heat of a torch, though the size and heat may increase if the fire has a chance to spread and consume
+        potent fuel. The same applies if the fire spreads beyond the borders of a Tainted Place; any flames that
+        cross the border will be completely mundane orange fire. If it spreads into a second Tainted Place than
+        it will not regain any supernatural properties.</p>
+    <p>For the purposes of Fuoco charms Tempesta’s green fire is fire. Fuoco Charms cannot prevent
+        Purgation’s green fire from loosing it’s supernatural properties when removed from a Tainted Place.</p>
+    <p>the Princess is interrupted she must begin the Charm from scratch; her spilt blood bubbles and
+        boils, evaporating in seconds.</p>
+</div>
+
+<button type="button" class="collapsible">Catch a Falling Star (Govern •••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Wits + Empathy<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> variable
+    </p>
+    <table>
+        <tr>
+            <caption><b>Duration of Suspension</b></caption>
+        </tr>
+        <tr>
+          <th>Successes</th>
+          <th>At Will</th>
+          <th>Improbable</th>
+          <th>Infrequent</th>
+          <th>Common</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>10 minutes</th>
+            <td>30 minutes</th>
+            <td>1 hour</th>
+            <td>1 day</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>30 minutes</th>
+            <td>1 hour</th>
+            <td>1 day</th>
+            <td>2 days</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>1 hour</th>
+            <td>1 day</th>
+            <td>2 days</th>
+            <td>4 days</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>1 day</th>
+            <td>2 days</th>
+            <td>4 days</th>
+            <td>6 days</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>2 days</th>
+            <td>4 days</th>
+            <td>6 days</th>
+            <td>8 days</th>
+        </tr>
+        
+      </table> 
+      <b>Each success beyond 5 adds 2 more days to the duration.</b>
+    <p>The Princess delays a Charm’s effects. She must touch the intended target, then use another Charm
+        on him; the second Charm does not take effect immediately, instead the target gets the Held Charm
+        condition for a time depending on her successes. She may choose to release the delayed Charm, allowing
+        it to take effect, as an instant action at any time; if she doesn’t release it when this Charm expires, the
+        delayed Charm dissipates without effect. Alternately, instead of creating a delayed Charm that she may
+        release herself, the Princess may set a condition that, if met, releases it automatically, to lengthen the
+        time that Charm remains suspended; the more likely the condition is to occur, the longer the suspension
+        lasts.</p>
+    <p>The Princess must tell the target what will happen when the suspended Charm takes effect, and if
+        she sets a condition, she must tell the target what it is; but she can be as cryptic (“ When all eyes turn
+        toward you, you’ll find the strength to carry on”) or as direct (“ Hey, jackass! Try stealing someone’s
+        purse again, and you’re going to get set on fire!”) as she wishes. She can keep up to her Inner Light in Charms suspended at once – once she reaches that limit, she must release a Charm before she may use
+        this Charm again.</p>
+    <p>In addition to either method of triggering the Charm the Princess may also set a condition in which
+        the Charm vanishes without activating (“ Turn yourself in to the police by midnight or you’ll be set on
+        fire!”).</p>
+    <p><b>Upgrade: Inanimate</b><br>
+        The Princess can place Held Charms on things other than living beings. She could for example enchant
+        a corrupt lawyer’s bag to teleport to her hands with Up In Smoke as soon as someone puts a laptop
+        in it.</p>
+    <p><b>Upgrade: Repeating</b><br>
+        The Princess may declare that her Charm will activate every time the condition is met. Each activation
+        beyond the first requires an additional Success on the Charm’s activation roll and requires the Princess
+        to pay the Charm’s activation cost in full.</p>
+</div>
+
+<button type="button" class="collapsible">Resting Place (Govern ••• Lacrima •••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Presence + Occult (vs Composure + Supernatural Advantage)<br>
+        <b>Cost:</b> 2 Wisps<br>
+        <b>Duration:</b> Inner Light in days
+    </p>
+    <p>With access to both a ghost and any object a Raven can bind a new anchor for the ghost, applying
+        the Anchor Condition to a target of her choice. This is temporary and only with great and constant
+        effort can a Princess keep a loved one on this plane, more commonly it is used by the Followers of Tears
+        to position their ghostly retainers where they can be of greatest service to the Last Empress. When used
+        on an existing Anchor Resting Place can apply the Open condition.</p>
+    <p>If the target is a living being he may resist the charm by rolling Composure + Supernatural Advantage,
+        inanimate objects have no roll to resist.</p>
+    <p>It should be noted that while ghosts can normally teleport to an anchor, the defenses around Alhambra
+        prevent them from crossing the boundary of the fortress city.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Noble offends the ghost; it either attacks her or runs from her.<br>
+        <i>Failure:</i> The ghost is not anchored to the object.<br>
+        <i>Success:</i> The object gains the Anchor Condition [CofD 133] linked to the ghost for a number of days
+        equal to the Princess’ Inner Light.<br>
+        <i>Exceptional Success:</i> The ghost finds manifesting near the object an easy feat. The new anchor gains
+        the Open Condition.
+    </div>
+</div>
+
+<button type="button" class="collapsible">Unweaving (Govern ••••)</button>
+<div class="content">
+    <p><b>Action:</b> Reactive, Instant, or Extended<br>
+        <b>Dice Pool:</b> Clash of Wills or Dexterity + Empathy (5 minutes/roll, Threshold = Special )<br>
+        <b>Cost:</b> 2 Wisps<br>
+        <b>Duration:</b> indefinite
+    </p>
+    <p>To unravel magical defences, to unpick a curse upon a beloved little sister, to tear apart a hostile
+        Charm flying at you. There are many reasons why a Princess might need to unweave the Charms and
+        magic of another. This Charm allows her to do so. The Princess may choose to Invoke this Charm as
+        an Reactive, Instant, or Extended action depending on the situation and, difficulty of the task ahead.</p>
+    <p>If invoked reactively the Princess grabs hold of the unfinished magic and tries to rip it apart while
+        her opponent tries to hold the magic together. In short, Unweaving lets the Princess trigger a Clash of
+        Wills at any time her opponent casts a spell on a target within arms reach.</p>
+    <p>An enchantment that has been completed and taken hold is tougher. Instead of a Contested Action
+        the Princess must score more Successes than her opponent’s Clash of Wills dicepool. She can attempt
+        to grab the magic magic and rip it apart as an Instant action, or she can delicately unweave it thread
+        by thread as an Extended action.</p>
+    <p>Unweaving can only be used against “magic power” abilities with a duration that lasts longer than
+        a Turn. Innate abilities such as Transformation or Sensitivity are unaffected. The Princess also needs
+        to be able to touch the magic, usually this means being within the affected area or within arms reach of
+        the target.</p>
+    <p>When used against Ephemeral Beings, such as Dreamlanders, Unweaving can be used to undo the
+        effects of Influences and Numina. Unweaving cannot be used to undo Manifestations, it can remove
+        Manifestatinon Conditions if they were created by an appropriate method. For example, Unweaving can
+        remove the Anchor condition if was created with the Charm Resting Place, an Infleunce or a Numina.
+        It could not remove the condition from a natural Anchor such as a ghost’s old bones.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess gets her magic into a horrible tangle, and is at -2 to perform Unweaving
+        for the rest of the scene.<br>
+        <i>Failure:</i> The Princess makes no progress.<br>
+        <i>Success:</i> Progress is made, when enough Successes are reached the target magic fall apart.<br>
+        <i>Exceptional Success:</i> In addition to making great Progress, the Princess also learns some detail about
+        the magic’s origin, or why this thing was enchanted. Take the Informed Condition.
+    </div>
+    <p>Suggested Modifiers: The target magic is cast on a human (including Sworn and Princesses) (+2); The
+        target magic is cast on something other than a living being (-2); the target magic is a Charm (+1),
+        the target magic is a Charm and the Princess knows a Charm from the same family (+2), the target
+        magic is a Charm and the Princess knows it (+3); the Princess applies an emotionally appropriate
+        Invocation, such as Fuoco to unpick magic that turns love to loathing or Acqua to remove a curse of
+        ignorance (+2), the Princess applies an emotionally inappropriate Invocation (-2), the Princess applies
+        an elementally appropriate Invocation, such as Acqua or Fuoco to extinguish a magical fire (+2), the
+        Princess applies an elementally inappropriate Invocation (-2). </p>
+</div>
+
+<button type="button" class="collapsible">Accept Fealty (Govern •••• Invocation •••)</button>
+<div class="content">
+    <p><b>Action:</b> Extended<br>
+        <b>Dice Pool:</b> Presence + Persuasion - Intimacy (10 minutes/roll, threshold = target’s Willpower)<br>
+        <b>Cost:</b> 1 Wisp/roll, 1 Willpower<br>
+        <b>Duration:</b> Lasting
+    </p>
+    <p>Through a Ceremonial induction the Princess can invite mortals to join her Court, becoming Sworn.
+        The ceremony is typically held in a relatively quiet and isolated location. This is for pragmatic reasons,
+        as the process of the Charm creates a rather impressive light show. For the Sworn, the ceremony is an
+        enlightening experience, no pun intended. They see the image of the Queen they have chosen to serve,
+        for a moment they share in everything the Queen means to the Princess accepting their fealty, and in
+        that moment they share in the Princess’ magic. When the ceremony ends a small spark of Light remains.</p>
+    <p>The target must understand what he is doing, and do it voluntarily; on an unknowing or unwilling
+        target, the Charm fails. It also fails on mortals steeped in villainy; the target must not have Vice-Ridden
+        or be Darkened. Each Queen has a different version of this Charm, and a Princess can learn or use only
+        the one for her own Queen.</p>
+    <p>Note that while Accept Fealty subtracts Intimacy from it’s dicepool it cannot be performed at a
+        distance, and penalty is not reduced to -0 for having line of sight. Many Princesses will gladly swear a
+        mortal into their Court as a favour to Princesses who don’t know this Charm or belong to another Court
+        less suitable for the Sworn-to-be, in exchange for a Bequest or a favour worth a dot of Willpower. They
+        power through the Intimacy penalty through high attributes.</p>
+</div>
+
+<button type="button" class="collapsible">I am Become Light (Govern ••••• Fuoco ••••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Presence + Empathy<br>
+        <b>Cost:</b> 3 Wisps, 1 Willpower<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>A Blazing crimson light shines forth from the Princess’ heart, glowing through her body and Regalia.
+        The Queen of Swords’ avatar may walk among things not of the light, and know that they are the ones
+        at the disadvantage.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess’ phylactery shatters, and she reverts to mundane form. The normal
+        procedures for obtaining a new phylactery must be followed.<br>
+        <i>Failure:</i> White light scintillates from the Princess’ clothes, but there is no further effect.<br>
+        <i>Success:</i> The Princess goes through a second transformation, her normal Regalia replaced with ones of
+        even greater purity and a golden light shines out from her heart. The shift releases a burst of the Light
+        that burns away magics alien to it; all supernatural powers not of the Light with fewer successes than
+        the Princess’ roll within a radius of Inner Light + successes yards immediately end, if the successes for their activation were less than her successes. Powers that did not require activation remain intact. In
+        addition the Princess gets both the Shining Heart Tilt, with the same activation successes and radius,
+        which bathes the affected area in true sunlight as well as applying her activation successes as a penalty
+        to all supernatural powers not of the Light. Finally Swords’ avatar gains the Terrifying Tilt which
+        affects all Creatures of the Dark except the Dethroned.<br>
+        <i>Exceptional Success:</i> The extra successes are their own reward.
+    </div>
+</div>
+
+<button type="button" class="collapsible">Martyr (Govern ••••• Tempesta ••••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Presence + Intimidation + the Princess’ Health Boxes without Aggravated Damage - Inner
+        Darkness + the Dethroned’s Health Boxes without Aggravated Damage<br>
+        <b>Cost:</b> 2 Wisps, 1 Willpower. Using this Charm is suicide.<br>
+        <b>Duration:</b> indefinite
+    </p>
+    <p>The Seraphic General is Hate, and what she hates is The Darkness and the Nobility who betrayed
+        mankind to the Darkness. Most such filth can be found hiding in Alhambra like the cowards they are,
+        but others fell deeper into despair. Their crowns were shattered, their titles stripped from them, they
+        were Dethroned.</p>
+    <p>The sad truth is that, much like Princesses, you can’t really kill a Dethroned. They reincarnate.
+        Driving a Dethroned away or killing will normally keep it away for a very long time but for a truly
+        permanent solution you have to redeem the Princess it once was.</p>
+    <p>This doesn’t sit right with the Court of Storms, they don’t believe the fallen deserve redemption, and
+        so they have their own method. Reaching deep into the Dethroned they grab hold of their soul, they
+        incinerate their body and drag the Dethroned’s rotten soul into the afterlife.</p>
+    <p>To use this Charm the Princess must touch their target. Note that after the Dethroned is killed it’s
+        body remains for around ten minutes or so, during this time Martyr can be cast and the Dethroned
+        cannot resist the Charm.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess dies for nothing, the Dethroned remains at large.<br>
+        <i>Failure:</i> The Princess takes Resistant Lethal Damage equal to the Dethroned’s Inner Darkness, and
+        the Dethroned takes Resistant Lethal Damage equal to the Princess’ Inner Light. If this kills either
+        of them the Charm dosn’t affect what happens next.<br>
+        <i>Success:</i> The Princess grabs the Dethroned and both ignite with green fire. In seconds only ash
+        remains.<br>
+        <i>Exceptional Success:</i> No additional effect.
+    </div>
+    <p>The furies claim that the Dethroned’s rotten soul will be dragged before the Queen to be burnt to
+        nothing by the Her righteous fury while the martyr will remain as a part of the Queen of Storms and lend
+        their strength to Her crusade. While there is some evidence that the Furies do join with their Queen,
+        what happens to the Dethroned is unknown. Since no one has kept a record of which Dethroned were
+        killed in this manner they can’t even prove it permanently kills Dethroned.</p>
 </div>
 
 <div class="bottomline"></div>
