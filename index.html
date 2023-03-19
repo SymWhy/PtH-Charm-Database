@@ -42,6 +42,7 @@
         border: solid;
         border-width: 1px;
         border-color:rgb(188, 188, 188);
+        border-bottom: none;
         text-align: left;
         outline: none;
         background-color:rgb(234, 234, 234);
@@ -52,6 +53,11 @@
         padding: 10px;
         display: none;
         overflow: hidden;
+        border: solid;
+        border-width: 1px;
+        border-color: rgb(188, 188, 188);
+        border-top: none;
+        border-bottom: none;
         transition: max-height 0.2s ease-out;
         -moz-transition: max-height 0.2s ease-out;
         -o-transition: max-height 0.2s ease-out;
@@ -60,6 +66,13 @@
 
     .failsucc{
         padding: 10px;
+    }
+
+    .bottomline{
+        border: none;
+        border-bottom: solid;
+        border-width: 1px;
+        border-color:rgb(188, 188, 188);
     }
 
     .tab{
@@ -72,7 +85,7 @@
         background-color: inherit;
         float: left;
         border: none;
-        padding: 14px;
+        padding: 2px 14px;
         transition: 0.3s;
         font-size: 26px;
         font-family: Charm;
@@ -100,13 +113,13 @@
     <button class="tablinks" onclick="openTab(event, 'Appear')">Appear</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Bless')" id="defaultOpen">Bless</button>
+    <button class="tablinks" onclick="openTab(event, 'Bless')">Bless</button>
 </div>
 <div class=tab>
     <button class="tablinks" onclick="openTab(event, 'Connect')">Connect</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Fight')">Fight</button>
+    <button class="tablinks" onclick="openTab(event, 'Fight')" id="defaultOpen">Fight</button>
 </div>
 <div class=tab>
     <button class="tablinks" onclick="openTab(event, 'Govern')">Govern</button>
@@ -714,7 +727,7 @@ whole group.
 
 <button type="button" class="collapsible">Garden of Bright Images (Appear ••••)</button>
 <div class="content">
-<p>Requires: Phantom
+<p>Requires: <i>Phantom</i>
 <b>Action:</b> Extended<br>
 <b>Dice Pool:</b> Presence + Expression (1 minute/roll, threshold = Sanctuary + duration in hour)<br>
 <b>Cost:</b> (Sanctuary rating) Wisps<br>
@@ -741,7 +754,10 @@ all the Consecrated ground and lasts until the Condition expires or she dismisse
 duration as 0 when calculating the threshold.
 </p>
 </div>
+<div class="bottomline"></div>
 </div>
+
+
 
 
 <div id=Bless class="tabcontent">
@@ -1149,7 +1165,1930 @@ during this Charm.</p>
     <p>Until the Charm ends, the Princess gains the Invocation Lock condition keyed to Lacrima.</p>
 </p>
 </div>
+<div class="bottomline"></div>
+</div>
 
+<div id=Connect class="tabcontent">
+    <p>Connect Charms trace and use the connections between people, or make and break such connections.
+        Only Graces have affinity for them.</p>
+
+<button type="button" class="collapsible">Fair Welcome (Connect •)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Manipulation + Empathy<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene</p>
+<p>Every person is intimately connected to a culture, it is a thread woven from a lifetime of experience
+    and through that experience a person learns a thousand little ways to act in order to belong. With this
+    Charm the Princess can temporally move her connection to wherever she is now; allowing her to fit in
+    and make a good impression wherever she goes.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Charm works in reverse, making the Princess naive and awestruck by new
+    people. She applies the Fresh Impression condition to herself, increasing her impressions of anyone she
+    hasn’t already formed an opinion about by one step.<br>
+    <i>Failure:</i> Nothing happens.<br>
+    <i>Success:</i> Until the Charm ends she automatically applies the Fresh Impressions Condition to anyone
+    she interacts with for the first time as well as anyone who has spoken to the Princess before but has
+    no opinion about her. Essentially, if the phrase “first impressions ” fits then the Charm functions.
+    The Condition increases the target’s impression by one step beyond what they would naturally be. In
+    addition so long as the Charm is action the Princess removes any penalties for lacking a Speciality to
+    a social skill or wearing inappropriate clothing.<br>
+    <i>Exceptional Success:</i> The Princess also gains the Blessing Condition, she has a +1 to all social rolls
+    with the affected people.
+</div>
+<p><b>Upgrade: Second Chances</b><br>
+    Instead of an all-encompassing aura the Princess may instead focus this Charm on one single person,
+even one who has met the Princess before. The activation roll is Contested by the target’s Composure
++ Supernatural Advantage.
+</p>
+<p><b>Upgrade: Introductions</b><br>
+    The Princess may invoke First Impressions on someone other than herself.
+</p>
+</div>
+
+<button type="button" class="collapsible">Helping Hand (Connect •)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Inner Light + Empathy<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> Lasting</p>
+<p>If a thing is worth doing, it’s worth doing together. When the Princess assists in an instant teamwork
+    action, she may activate this Charm instead of rolling the relevant dice pool. Each success on the
+    activation roll becomes a bonus die for the primary actor. In effect this Charm replaces the usual
+    dicepool for a secondary actor with Inner Light + Empathy. In an extended teamwork action The
+    Princess can use Helping Hand multiple times, once for each roll. Any bonuses or penalties on the
+    teamwork dice pool also apply to the charm roll, and a dramatic failure penalizes the primary actor’s
+    roll as usual.</p>
+<p><b>Upgrade: Enduring</b><br>
+    <b>Cost: </b>1 Willpower<br>
+    When assisting in an extended teamwork action, all the Princess’ rolls are Inner Light + Empathy
+instead of the relevant dice pool.
+</p>
+<p><b>Upgrade: Guided</b><br>
+    Do not apply penalties on the teamwork dice pool to the activation roll.
+</p>
+<p><b>Upgrade: Twinned</b><br>
+    <b>Cost: </b>1 Wisp<br>
+    When assisting in an extended teamwork action, all the Princess’ rolls are Inner Light + Empathy
+instead of the relevant dice pool.
+</p>
+</div>
+
+<button type="button" class="collapsible">Laying Down The Line (Connect •)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Resolve + Streetwise<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene (Consecrated)</p>
+<p>A Noble is a creature of divides; between Light and Dark, Transformed and mundane, Hope and despair.
+    Drawing a line on the ground, she separates one area from another, and so becomes aware of anyone that
+    crosses that line. Before this Charm can be used, the Noble must first make some kind of line or divide
+    to empower, such as a chalk line drawn on tarmac, a rope thrown down, or even putting up a picket
+    fence around a house. This is a mundane activity, unrelated to the actual use of the Charm, and these
+    divides can be linear, or enclose an area. It can also empower pre-existing divides, such as a doorway,
+    or a river. These divides must either measure no more than (Inner Light x 20) yards in any direction,
+    or be in an area affected by the Consecrated Condition.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess’s clumsy magic temporarily manages to scramble her memories. She
+    gains the Lost Condition, she is no longer able to remember how place connects to place.<br>
+    <i>Failure:</i> The Charm fails to activate, with a slightly pathetic spluttering noise.<br>
+    <i>Success:</i> The divide is empowered, gaining the Line in the Sand Condition. She nominates certain
+    targets and instantly knows if they cross the line (and which line, if she has more than one active). The
+    Princess can nominate everyone, a single individual, or she may nominate a social group by adding
+    Commonality to her roll. By default the duration one scene. If used on a permanent natural divide,
+    such as a doorway, fence or across a bridge, the duration is increased to one day. If used on Consecrated
+    ground the duration is until the area is no longer Consecrated.<br>
+    <i>Exceptional Success:</i> The magic flows easily, the divide feeling natural, and so the Princess is refunded
+    the Wisp cost for the Charm.
+</div>
+<p>Suggested Modifiers: Naturally secure building (+ Safe Place). Exceptionally strong memories of love
+    and safety, such as a childhood home or childhood holiday home (+5). Strong memories of love and
+    safety, such as a long time friend’s home (+3). The character does not have position of the owner of
+    the land to do this (-2).</p>
+<p><b>Upgrade: Illuminated</b><br>
+    <b>Cost: </b>1 Wisp<br>
+    Reaching out, the Princess sketches the bounded area in her mind, painting the delineation in liquid
+light. She is not required to make a mundane divide, and so may encompass any area up to the limit
+as part of the activation Instant action, and the line may not be removed by the destruction of the
+mundane component.
+</p>
+<p><b>Upgrade: Unnatural</b><br>
+    The Princess has additional options when deciding who the lines should target. She may now choose
+anyone Supernatural, the Light touched (Transformed Princesses, Sworn, Beacons, Shikigami), or
+Creatures of the Darkness. For the purpose of this Charm “supernatural” has a minimum threshold
+of a Minor Template.
+</p>
+<p><b>Upgrade: Sheltered (Lacrima •)</b><br>
+    The Princess has additional options when deciding who the lines should target. She may now choose
+the Court of Storms, including Princesses, Stormwracked and Goalenu. She does not need to add
+Commonality to her roll.
+</p>
+<p><b>Upgrade: Righteous (Tempesta •)</b><br>
+    The Princess has additional options when deciding who the lines should target. She may now choose
+Creatures of the Dark or the Court of Tears, including Princesses, Ghost Princesses (if they are part
+of the Court of Tears) and Sworn. She does not need to add Commonality to her roll.
+</p>
+</div>
+
+<button type="button" class="collapsible">Royal Witness (Connect •)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Intelligence + Politics<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 month per Wisp</p>
+<p>A Princess is royalty and may be called upon to witness a contract in her official capacity. This charm
+    may be invoked upon any written or spoken contract, but everyone with obligations must be present and
+    consent to the Princess bearing witness. This Charm is a lot less powerful than some Princesses wish,
+    it can only work with clear and discrete actions and stands no chance when used on something like a
+    corporate merger.</p>
+<p>If the Princess wishes she can invoke this Charm multiple times to ensure that all signatories to the
+    contract uphold their obligations.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> Instead of creating a connection to the contract the Princess just gives herself a
+    headache. She takes moderate Sick Tilt for the scene.<br>
+    <i>Failure:</i> Nothing happens.<br>
+    <i>Success:</i> The Princess connects herself to one signatory of the contract, and knows when the terms
+    are fulfilled or broken, but only for clear and discrete actions. If a contract required a mechanic to
+    deliver a car in good repair by Saturday the Princess would know the moment he delivered the car or
+    the deadline passed with no delivery, but she would have no clue if the car is in good repair without
+    walking over and checking herself. Unlike most such powers Royal Witness works on the spirit of the
+    agreement and not the letter. If the mechanic got one of his employees to deliver the car on his behalf
+    that would fulfil the contract unless either party considered it important that he made the delivery
+    personally.<br>
+    <i>Exceptional Success:</i> No further benefit.
+</div>
+<p><b>Upgrade: Guild Charter (Terra •)</b><br>
+    Modified by Commonality<br>
+    The Princess’ awareness is not limited to a single person. When invoking the Charm the Princess
+may nominate an organisation for which the signatory has Status in and who he represents in this
+negotiation. if she does so she’ll become aware when anyone in that organisation fulfils or breaks the
+terms of the agreement.
+</p>
+<p><b>Upgrade: Queen’s Arbitration (Lacrima •••)</b><br>
+    The Princess enforces the contract with all the authority of the Last Empress. Any party who breaks
+their side of the deal must roll a Breaking Point or Compromise with a penalty equal to the Princess’
+Lacrima. The Storyteller decides if and how other Supernatural beings are affected.
+</p>
+</div>
+
+<button type="button" class="collapsible">Small Providence (Connect •)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Manipulation + Streetwise<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 day</p>
+<p>The Princess (or one she helps) finds, and obtains, that one thing she was looking for, at a surprisingly
+    low price.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Noble’s finances are thrown into disorder. For the next week, the Availability
+    of any equipment or services she wants counts as one dot higher.<br>
+    <i>Failure:</i> The target gains nothing from the Charm.<br>
+    <i>Success:</i> The target of the Charm gains one instance of the Bargain Condition applicable to any
+    purchase. The Condition is wasted if it is not used when the Charm expires.<br>
+    <i>Exceptional Success:</i> The target of the Charm gains two instances of the Bargain Condition. Both will
+    end when the Charm expires.
+</div>
+</div>
+
+<button type="button" class="collapsible">Trace the Threads (Connect •)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Unrolled<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene or Lasting</p>
+<p>The Princess can unerring seek out the right person and she may learn many things from an hour of
+    polite talk. In essence she spends a Wisp to apply the Blessing Condition to herself, acquiring a dot
+    of the Contacts Merit for a scene which she may then use using the usual rules. The Contacts must
+    represent people who can plausibly be found in the local area.</p>
+<p>If the Princess wishes, and has given a good impression, she may spend Experience to make the
+    Contacts permanent.</p>
+</div>
+
+<button type="button" class="collapsible">Mantle of Authority (Connect • Terra •)</button>
+<div class="content">
+<p><b>Action:</b> Instant and Contested<br>
+<b>Dice Pool:</b> Presence + Politics vs Composure + Supernatural Advantage<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene</p>
+<p>The Noble claims her authority from the Light to keep her person inviolate and her movements
+    unrestricted. The Charm fails if the Noble or her target is engaged in combat.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The target sees the Noble as a fraud or a lunatic, and will react accordingly.<br>
+    <i>Failure:</i> The target sees nothing significant about the Noble’s phylactery.<br>
+    <i>Success:</i> For the rest of the scene, the target assumes the Noble has diplomatic privileges. He will not
+    try to search her or detain her, no matter what she’s been doing, though if she lacks permission to be
+    where she is, he may escort her out. The target also will not initiate combat with the Noble unless
+    ordered to do so by his superiors, though he will respond if she attacks.<br>
+    <i>Exceptional Success:</i> The Charm’s effect persists for a full day before it ends.
+</div>
+<p><b>Upgrade: Collective</b><br>
+    Modified by commonality<br>
+    <b>Cost: </b>1 Wisp<br>
+    The Noble may use the Charm on members of an organization that can see or hear her, using the
+Commonalty modifier. The member with the highest Composure + Status (not Supernatural
+Advantage) Contests for the group.
+</p>
+<p><b>Upgrade: Membership</b><br>
+    Requires: <i>Collective</i><br>
+    <b>Cost: </b>1 Wisp<br>
+    The noble reweaves the threads that bind an organisation together to include herself. When she uses
+Collective on an organisation large enough to have a Status Merit she gains the Blessing Condition
+adding half her Terra (rounding up) in Status to an organisation. This organisation cannot be
+supernatural in nature (which includes any organisation that offers a supernatural Merit or
+Endowment as a benefit to members). In addition to Status the Princess knows how to talk and act
+like a member of the organisation, and if she has appropriate Charms (such as Phantom) she knows
+how to create accurate markers of identity. However her membership is fragile, she will need to come
+up with her own reasons for why nobody has met her before and if she gives people a reason to
+investigate her membership they will discover the truth.
+</p>
+</div>
+
+<button type="button" class="collapsible">Pull Together (Connect • Terra ••)</button>
+<div class="content">
+<p><b>Action:</b> Reflexive<br>
+<b>Dice Pool:</b> Unrolled<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene</p>
+<p>In the face of a crisis the Princess takes charge, with a few quick commands and a hastily tied knot
+    in the web of interpersonal connections. When the Princess uses Jury Rigging [CoD page 102] to create
+    an organisation she may spend a Wisp before rolling. If she does so then upon a regular Success the
+    resulting equipment is not Fragile or Volatile, however it will only last for one scene.</p>
+</div>
+
+<button type="button" class="collapsible">Sweet Fragrance (Connect • Legno •)</button>
+<div class="content">
+<p><b>Action:</b> Instant and contested<br>
+<b>Dice Pool:</b> Composure + Socialize<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene</p>
+<p>The Princess releases a subtle scent into the air around her, that relaxes those who breathe it and
+    inclines them to be friendly. She affects a circular area with a radius up to (Inner Light + Legno) yards,
+    centred on herself.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The scent the Princess releases is mildly offensive. She takes a -1 penalty on all
+    Social rolls for the rest of the scene, or until she cleans herself with soap or magic.<br>
+    <i>Failure:</i> The Princess releases no scent.<br>
+    <i>Success:</i> Anyone within (Inner Light + Legno) yards of the Princess who cannot match her activation
+    Successes with a Composure + Supernatural Tolerance roll gains the Trusting Condition. The Princess
+    must roll to avoid gaining the Condition herself.<br>
+    <i>Exceptional Success:</i> The Princess is immune to her own scent.
+</div>
+<p><b>Upgrade: Subtle (Legno ••)</b><br>
+    The Princess may permeate an object with her fragrance by touching it. The charm functions as
+normal save that the area surrounds the affected object.
+</p>
+</div>
+
+<button type="button" class="collapsible">Minding Madoka (Connect • Lacrima ••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Composure + Empathy - Intimacy or Commonality<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> Successes in days</p>
+<p>Like the Queen of Tears, a Raven never lets those she protects stray from the front of her mind.
+    Whenever the target of this Charm experiences intense fear or pain (physical or emotional) the Princess
+    is immediately aware of it. If she has used this Charm on multiple people she is aware of which one is in
+    distress.</p>
+<p>Minding Madoka can be Invoked as at Intimate range or on a group via Commonality, however a
+    Princess cannot use both modifiers simultaneously.</p>
+</div>
+
+<button type="button" class="collapsible">Mercury's Blessing (Connect • Acqua •)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Intelligence + Expression<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene</p>
+<p>With a touch of the hand and a look in the eye, the Princess may converse with anyone in the world. She
+    touches someone to activate the Charm. With an ordinary success, she acquires a basic understanding
+    of the one of the target’s language until the Charm ends. She gains the Blessing Condition, the affected
+    trait is a dot in the multilingual merit applied to a single language the target knows. On an Exceptional
+    Success the Princess gets the Language Merit instead.</p>
+<p><b>Upgrade: Lasting</b><br>
+    <b>Cost: </b> +1 Wisp<br>
+    <b>Duration: </b>1 day<br>
+    The Princess’ magical fluency persists for a full day from the moment she gained it.
+</p>
+<p><b>Upgrade: Overflowing (Acqua ••)</b><br>
+    If a person speaks more than one language, the Princess can learn them all. The effects apply to one
+language for each success rolled, up to her Acqua.
+</p>
+<p><b>Upgrade: Instructing (Acqua ••)</b><br>
+    The Princess can use this Charm in reverse, granting others the ability to speak a language she knows.
+</p>
+</div>
+
+<button type="button" class="collapsible">Better Together (Connect ••)</button>
+<div class="content">
+<p><b>Action:</b> Instant and Contested<br>
+<b>Dice Pool:</b> Manipulation + Socialise vs Composure + Supernatural Advantage<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> Until the condition is resolved</p>
+<p>With deft fingers the Princess weaves two people together, using each as support for the other so that
+    they may reach greater heights. The Princess may be one of the two people. The is contested by the
+    higher dice pool of the targets, but if everyone consents the Charm is unopposed.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> Both parties take the Fresh Impressions condition, setting their impressions one
+    stage lower for a day.<br>
+    <i>Failure:</i> Nothing happens.<br>
+    <i>Success:</i> The charm takes effect, one or both of the targets, the Princess’ choice, gain the Guided
+    Condition connecting them to the other target.<br>
+    <i>Exceptional Success:</i> In addition both parties take the Fresh Impressions condition, setting their
+    impressions one stage higher for a day.
+</div>
+</div>
+
+<button type="button" class="collapsible">Shared Interests (Connect ••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Presence + Socialize<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene or 1 day</p>
+<p>The Princess turns common knowledge and training into a bond among the people near her. The Princess
+    may use this Charm on a person she can touch, when the target is in the company of at least four other
+    people, and he and the others all have at least 2 dots in the same Skill. The Princess may not use the
+    Charm on anyone already under its effects.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess becomes flustered and distracted when the target can see her. She
+    takes the Nervous Condition, which resolves when she has left the target’s presence for at least one
+    scene.<br>
+    <i>Failure:</i> Nothing happens.<br>
+    <i>Success:</i> For the rest of the scene, the target has the benefits of the Hobbyist Clique Merit, related
+    to the Skill he shares with the others who are present. The benefit is limited to one Skill at a time;
+    if more than one clique can be formed around the target for different Skills, the Princess chooses a
+    Skill as she activates the Charm. The target needs the help of at least four clique members to get
+    the benefit; the Charm does not end if the clique disperses, but it has no effect unless five members
+    including the target are working together.<br>
+    <i>Exceptional Success:</i> The Charm grants its benefits to the target until the next sunrise.
+</div>
+</div>
+
+<button type="button" class="collapsible">The Right Word (Connect ••)</button>
+<div class="content">
+<p><b>Action:</b> Instant and contested<br>
+<b>Dice Pool:</b> Manipulation + Persuasion vs. Composure + Supernatural Tolerance<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> instant</p>
+<p>The Princess can read the hearts of those she meets, discovering what they most desire and what she
+    can do to help them reach it. At the start of a social maneuver with a person, the Princess may activate
+    this Charm.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess is led to believe the target has an Aspiration which is, in fact, repugnant
+    to him. If she offers to help him achieve the spurious goal, add one Door to her social maneuver and
+    lower the impression by one step.<br>
+    <i>Failure:</i> The Princess learns nothing of her target’s desires. The social maneuver proceeds normally.<br>
+    <i>Success:</i> The Princess learns one of the target’s current Aspirations in the course of her first attempt
+    to open a Door. She may appeal to that Aspiration after the first attempt resolves, whether it succeeds
+    or fails. If the target has a Dream, or any other trait similar to Aspirations, the Princess can discover
+    it instead of an Aspiration.<br>
+    <i>Exceptional Success:</i> The Princess learns two of the target’s Aspirations (or Vocations, or similar
+    traits) as she tries to open her first Door.
+</div>
+<p><b>Upgrade: Convincing</b><br>
+    <b>Cost: </b>1 Wisp<br>
+    The Princess knows just how to appeal to her target’s wishes. When she appeals to an Aspiration
+revealed by the Charm during the social maneuver she used it, she opens two Doors instead of one.
+</p>
+</div>
+
+<button type="button" class="collapsible">Beast Speaker (Connect •• Legno •)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Intelligence + Animal Ken<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene</p>
+<p>Beast Speaker allows a Princess to speak to any animal, and understand its replies.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The targeted animal, and any other animal of the same species, turns hostile and
+    will attack the Princess if it can until the Charm ends.<br>
+    <i>Failure:</i> The animal does not understand the Princess, and behaves as it normally would.<br>
+    <i>Success:</i> The Princess acquires the Blessing Condition, the affected trait is the Language Merit, applied
+    to the species of animal targeted.<br>
+    <i>Exceptional Success:</i> The Princess acquires a second Blessing Condition. The trait is social rolls with
+    any member of the species targeted and the bonus is +2 dice.
+</div>
+</div>
+
+<button type="button" class="collapsible">Flash of Brilliance (Connect •• Specchio •••)</button>
+<div class="content">
+<p><b>Action:</b> Reflexive<br>
+<b>Dice Pool:</b> Presence + Subterfuge<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> Indefinite</p>
+<p>To an Heir, mundane history and trivia often seem so… trivial. Shouldn’t an Heir’s magic be proof
+    enough of their genius? This Charm enhances any action with the goal of convincing others that the
+    Noble is well-informed about some topic.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Noble’s action is an automatic dramatic failure. Whatever she says, the
+    audience perceives only foolish ignorance of the topic.<br>
+    <i>Failure:</i> The action is neither helped nor hindered.<br>
+    <i>Success:</i> The Noble passes herself off as an expert. If her roll for the action fails, the audience perceive
+    it as though she rolled one success; if it succeeds, they see an exceptional success. Listeners will
+    remember hearing only the things the Noble said that were appropriate to the topic, but will believe
+    the full speech conveyed an accuracy and understanding appropriate to the result of the roll. The
+    Charm affects only what the audience hears; dictation, recordings, and so on capture only the actual
+    speech, although listeners will not realize it until the Noble is done speaking.<br>
+    <i>Exceptional Success:</i> The Noble’s apparent mastery of the topic prevents anyone from challenging her
+    claims. If her action succeeds, listeners must spend 1 Willpower to dispute anything she says on the
+    topic for the rest of the scene.
+</div>
+</div>
+
+<button type="button" class="collapsible">Hail to the Homecoming Queen (Connect •• Specchio •••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Presence + Expression<br>
+<b>Cost:</b> 2 Wisps + 1 Willpower<br>
+<b>Duration:</b> 20 turns</p>
+<p>With a dramatic entrance all eyes turn adoringly towards the Princess.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess draws no attention as is compelled to try harder. Take the Drama
+    Queen Condition.<br>
+    <i>Failure:</i> The Charm has no effect.<br>
+    <i>Success:</i> For the next 20 turns (one minute) every character who sees the Princess and has not yet
+    seen the Princess this scene, and who’s Composure is lower than her activation Successes takes the
+    Swooned Condition. If they have not been resolved the Conditions fade at the end of the scene.<br>
+    <i>Exceptional Success:</i> Extra Successes are their own reward.
+</div>
+</div>
+
+<button type="button" class="collapsible">King of the Road (Connect •• Specchio •••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Presence + Intimidation<br>
+<b>Cost:</b> 2 Wisps + 1 Willpower<br>
+<b>Duration:</b> 1 scene</p>
+<p>In American culture no item is more symbolic of a person’s status than their car and a Brat can exploit
+    the connection between man and machine to demonstrate her superiority through a flashy ride. When
+    invoking this Charm the Princess selects to either flaunt her car’s speed or beauty; beauty is defined as
+    the highest equipment bonus it gives to a social skill. The Heir may also use this Charm upon a truck
+    or motorcycle, or a Transformed Bequest for the Charm Royal Chariot that takes the form of any of the
+    aforementioned vehicles.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess damages her car, it immediately looses a quarter of it’s structure.<br>
+    <i>Failure:</i> The Charm has no effect.<br>
+    <i>Success:</i> For the remainder of the scene anyone who sees the Brat’s vehicle, and who derives social
+    status from their own (or their spouse’s) vehicle, cannot help but compare the quality of their rides.
+    If their ride is of the same type inferior they must roll Composure + Supernatural Advantage or take
+    the Shaken Condition as the magic forces them to doubt their social status or masculinity. When the
+    Princess’ ride is a Bequest it’s speed can be calculated as normal and it’s appearance can be treated
+    as the higher of Inner Light or the applied Invocation, if Specchio was applied it counts as double.<br>
+    <i>Exceptional Success:</i> As above, except that there is no roll to resist the effects.
+</div>
+</div>
+
+<button type="button" class="collapsible">Queen's Burden (Connect •• Lacrima ••)</button>
+<div class="content">
+<p><b>Action:</b> Reflexive<br>
+<b>Dice Pool:</b> Unrolled<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> Lasting</p>
+<p>With a tug the Princess pulls the emotional pain of another onto herself to support her people as the
+    Queen supports all of Alhabmra. Queen’s Burden can be reflexively invoked upon witnessing a Mortal or
+    Beacon undergoing a Breaking Point. The target immediately feels their emotions numb and no longer
+    has to face that Breaking Point, but the Princess must bear the emotional turmoil, enhanced to a Noble
+    scale, and must immediately make a Sensitivity check.</p>
+</div>
+
+<button type="button" class="collapsible">You're Only in Trouble if you Get Caught (Connect •• Aria •••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Intelligence + Composure<br>
+<b>Cost:</b> 1 Willpower<br>
+<b>Duration:</b> Lasting</p>
+<p>Sometimes, one must learn to lose, to give up, and, to put it bluntly, to run away. By using magic taught
+    by the Queen of Thieves a Knave may escape from her past, and those who would use it to track her
+    down with magic.</p>
+<p>Each success on the activation roll reduces your Intimacy to a chosen subject by one degree per
+    success. If this reduces the connection below Few Feelings, it breaks altogether.</p>
+<p>The effects are permanent, but the connection can reform quickly if the Princess does not avoid
+    contact with whoever she has left behind. Her actual fealings remain unchanged.</p>
+<p><b>Upgrade: Partners in Crime (Aria ••••)</b><br>
+    <b>Cost: </b>+1 Wisp<br>
+    You can use the Charm on another person you can speak to. The target must give their consent for
+such a thing to occur.
+</p>
+<p><b>Upgrade: Band of Thieves (Aria •••••)</b><br>
+    Requires: <i>Partners in Crime</i><br>
+    <b>Cost: </b>+2 Wisps<br>
+    You can use the Charm on a social group you can speak to, extracting yourself from a Commonalty
+group. If combined with Partners in Crime the Princess can extract multiple people at no additional
+cost.
+</p>
+</div>
+
+<button type="button" class="collapsible">Cherish (Connect •••)</button>
+<div class="content">
+<p><b>Action:</b> Instant and Resisted<br>
+<b>Dice Pool:</b> Wits + Empathy - target’s Composure<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> One Charm or Inner Light days</p>
+<p>A person she’s met, a place she’s been – these fix themselves in a Princess’ heart. The Princess uses this
+    Charm on a target within sight, to grant herself temporary Intimacy to it.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess cannot use any Charm through an Intimate connection to the target
+    until she sees it again.<br>
+    <i>Failure:</i> The Charm has no effect.<br>
+    <i>Success:</i> The Princess and her target gain the Entwined condition, linked to each other. For every
+    Success the Link Strength is one step stronger than her natural Intimacy, to a minimum of Love. The
+    Condition ends when a Charm is invoked across the new connection.<br>
+    <i>Exceptional Success:</i> The connection lasts for several Charms, though it frays each time the Princess
+    uses it. The first Charm she uses has an Intimacy modifier of 0, the second has one of -2, the third -4,
+    and so forth until she returns to the original level of Intimacy.
+</div>
+Note that the Intimacy made by Cherish works both ways; if the target has a power that exploits
+Intimacy, he can send that power through the connection the Princess made.<br>
+<p><b>Upgrade: Durable</b><br>
+    <b>Cost: </b>1 Wisp<br>
+    Using Charms no longer ends the Entwined condition, it lasts for Inner Light days and no longer.
+</p>
+</div>
+
+<button type="button" class="collapsible">Leading the Way (Connect •••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Presence + Persuasion<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> Until the condition is resolved</p>
+<p>We put a lot of ourselves into our leaders. We trust them, we follow them, we even base parts of our
+    identity on which leader we follow. A Princess can work with the connections between people and their
+    leaders, bringing herself closer to the people she serves.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess shakes her confidence in her goals. Take the Self-Doubt Condition.<br>
+    <i>Failure:</i> Nothing happens.<br>
+    <i>Success or Exceptional Success:</i> Choose one Dream or Aspiration and mark it with the Guiding Light
+    Condition. When you fulfil it everyone who helped you do so in the current Session takes a Beat,
+    Princesses who help you fulfil a Dream also gain a Luminous Beat.
+</div>
+</div>
+
+<button type="button" class="collapsible">An Introduction (Connect •••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Manipulation + Empathy<br>
+<b>Cost:</b> 2 Wisps<br>
+<b>Duration:</b> Instant</p>
+<p>A Princess’ true power comes from the lives she has touched, so sometimes it’s important to touch the
+    right person. The Princess invokes this Charm to meet someone. She defines up to one characteristic
+    per dot of Inner Light or any applied Invocation. A characteristic can be trait (e.g. an Attribute, Skill
+    or Merit) or something less quantifiable like having a sunny disposition.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess learns how to find someone who satisfies all her requirements; however,
+    if she meets him, the storyteller should inflict some hardship upon her.<br>
+    <i>Failure:</i> Nothing happens.<br>
+    <i>Success:</i> The Princess twists fate ensuring that portents and omens will guide her to someone who
+    satisfies all her requirements. If she follows the signs (the Storyteller provides signs) she meets the
+    person in question.<br>
+    <i>Exceptional Success:</i> In addition, she will meet the person in favourable circumstances and create an
+    initial impression one step higher than she naturally would have.
+</div>
+<p><b>Upgrade: Proxy</b><br>
+    <b>Cost: </b>1 Wisp<br>
+    The Princess can act as an intermediary. She may use the Charm on a person she can touch. The
+Charm affects the target exactly as it would if he activated it himself, except that the Princess sees
+the signs and must tell them to the target.
+</p>
+<p><b>Upgrade: Meet Cute (Specchio •••)</b><br>
+    When the Princess follows the signs and meets the person she seeks, both immediately take the
+Swooned Condition.
+</p>
+</div>
+
+<button type="button" class="collapsible">Whispers from Afar (Connect •••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Wits + Socialize, modified by Intimacy<br>
+<b>Cost:</b> 2 Wisps<br>
+<b>Duration:</b> 1 scene</p>
+<p>What need is there of speech between you and those you love? A Princess uses this Charm to
+    communicate with another person; if he is not present, the Intimacy modifier applies. If the target has
+    Wisps, he can share the activation cost; both the Princess and the target spend 1 Wisp, and the target
+    does so reflexively.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> For the duration, the Princess imagines the voice of her target is speaking to her;
+    what it says is what she generally expects him to say, but it chooses the most distracting moments to
+    speak. She takes a -2 penalty on all Wits-based rolls.<br>
+    <i>Failure:</i> The Charm has no effect.<br>
+    <i>Success:</i> The Princess can speak directly to the mind of her target, without using her voice, and the
+    target can reply the same way. The Charm conveys only sounds that the Princess and the target could
+    actually speak; so, for example, if one thinks in a language the other doesn’t know, he hears the words but cannot understand them. On the other hand, anything said is heard as clearly as if the two of
+    them stood together in a quiet room. The first time someone is the target of this Charm, he must roll
+    Resolve + Composure to learn how to speak through the link (and, possibly, to persuade himself that
+    he isn’t imagining the voice in his head.)<br>
+    <i>Exceptional Success:</i> In addition, by concentrating the Princess and the target can share a memory.
+    The one who has the memory makes a memory roll (see p. 44 of the nWoD core book) to recall it;
+    whatever she recalls passes over the link, and the other makes a memory roll to retain the information.
+    This takes an instant action from both characters.
+</div>
+<p><b>Upgrade: Party</b><br>
+    <b>Cost: </b>1 Wisp<br>
+    The Princess applies the Commonality modifier to create a channel of voiceless speech among several
+people. She can speak to any or all of the targets’ minds, and they can speak to her and each other
+in the same way.
+</p>
+<p><b>Upgrade: Borrowing (Aria ••)</b><br>
+    The Charm’s link between minds carries sensations. Anyone in the link can make a Perception roll at
+a -2 penalty to borrow the senses of another person in the link for a brief moment, seeing what the
+other sees and hearing what she hears in that moment.
+</p>
+</div>
+
+<button type="button" class="collapsible">Ivory Gate (Connect •••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Manipulation + Socialize<br>
+<b>Cost:</b> 2 Wisps<br>
+<b>Duration:</b> 1 night</p>
+<p>The Princess binds her mind to another; when they next fall asleep they will share their dreams. The
+    Charm grants both the gift of lucid dreaming for the night and clear memories the morning after. To
+    open an Ivory Gate a Princess needs permission from the target, and the pair must sleep close enough
+    to touch.</p>
+<p>A lesser known use of this Charm is that it interacts with Crawlspaces. Normally the only way into
+    another person’s Crawlspace is to travel through the Dreamlands, but while two people are connected
+    by an Invocation of Ivory Gate they may see the entrance to each others Crawlspace. Only the owner of
+    the Crwalspace may unlock it, but they may lead others through. Every traveller must pay 1 Wisp or
+    one Willpower.</p>
+<p>The other, even more obscure, use of Ivory Gates is to invoke it on oneself. This seems to be a
+    waste of good Wisps, but while she is within her own Crawlspace and under the effects of a self-applied
+    Invocation of this Charm, she will be able to navigate from her Crawlspace into a regular dream (and
+    yes, she can bring others too but they don’t benefit from lucidity or clear memories unless Ivory Gate is
+    invoked upon them). An expensive but effective cure for insomnia or a fun night of lucid dreaming.</p>
+<p><b>Upgrade: Distant</b><br>
+    Modify the roll by Intimacy<br>
+    The Princess can share her dreams from any distance. She still requires permission, but a simple
+phone-call or arranging in advance is sufficient.
+</p>
+<p><b>Upgrade: Dream of Me (Specchio ••)</b><br>
+    Modify the roll by Intimacy<br>
+    The Princess no longer needs permission to enter another’s dreams, and can even open an Ivory
+Gate without giving the gift of lucid dreaming to the other party. This Upgrade can also be used
+to invade somebody’s dream from the Dreamlands and even allow a full invasion of another person’s
+dreamscape (see Amanojaku in Chapter four for more details on how to access a person’s dream from
+the Dreamlands, and how to invade a dreamscape), doing so requires that the Princess navigates
+through the Crawlspace into the target’s dream. They may not detour or use the Crawlspace in any
+way except as a path into the target’s dreams, this Charm simply doesn’t have the power.
+</p>
+
+</div>
+
+<button type="button" class="collapsible">Dehumanization (Connect ••• Speccho •••••)</button>
+<div class="content">
+<p><b>Action:</b> Instant and contested<br>
+<b>Dice Pool:</b> Presence + Socialise, vs Composure + Supernatural Advantage<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene</p>
+<p>To those at the apex of Specchio’s solipsism they alone are a real person. Everyone else is a secondary
+    character. Their lives contain the details relevant to the Heir’s story and nothing else; and by enchanting
+    the connections between an individual, a group, and society’s perceptions of that group she can protect
+    herself from any inconvenient reality.</p>
+<p>Before invoking this charm the Princess must name an archetype that the target could be identified
+    with. She could turn an ordinary family man who happens to work as a software engineer into a walking
+    talking stereotype of a star trek obsessed socially outcast computer geek, but she couldn’t turn him into
+    a corporate raiding wolf of Wall Street banker.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess’ solipsism reaches a fever pitch. She automatically rolls a dramatic
+    failure for the Specchio backlash on this charm.<br>
+    <i>Failure:</i> Nothing happens.<br>
+    <i>Success:</i> The target takes the Stereotypical condition. Their Vice becomes acting as expected, they
+    need to spend a point of willpower to act against their archetype, and they take the Open Condition
+    to Spirits or Dreamlanders who align with their archetype.<br>
+    <i>Exceptional Success:</i> The duration increases to two scenes.
+</div>
+<p><b>Upgrade: Group Identity</b><br>
+    The Princess can invoke this Charm on a group, applying Commonality to her roll. The highest dice
+pool among her targets contests the roll for the entire group. The Princess must choose the same
+archetype for the entire group and any members who cannot be linked to the archetype are exempted
+from the Charm’s effects.
+</p>
+</div>
+
+<button type="button" class="collapsible">Up in Smoke (Connect ••• Aria •••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Dexterity + Larceny, modified by Intimacy<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> Lasting</p>
+<p>The Noble summons and banishes objects in puffs of colored smoke. She can move an object of Size up
+    to her successes between her current location and a place she knows of; the Sympathy modifier applies
+    to the other place, not to the object, so she can’t summon an object that’s been moved since she last
+    saw it. Also, to send an object somewhere the Noble has to be carrying it, and when she takes an object
+    it ends up in her hands; the Charm can’t be used on anything the Noble can’t lift.</p>
+<p><b>Upgrade: Shuffled</b><br>
+    <b>Cost: </b>1 Wisp<br>
+    The Princess can take an object from one distant place and send it to another with one activation.
+Apply the worse of the Intimacy modifiers for the two locations.
+</p>
+</div>
+
+<button type="button" class="collapsible">Hymn to Orpheus (Connect ••• Legno ••)</button>
+<div class="content">
+<p><b>Action:</b> Instant and resisted<br>
+<b>Dice Pool:</b> Presence + Expression - targets’ Composure<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> concentration</p>
+<p>In the myths, the songs of Orpheus were so beautiful that all the natural world came to hear them.
+    The Princess can, in a small way, emulate him. When she has a natural animal within sight, she sings
+    or plays music pleasing to it, and all the animals of the same species who hear the song gather together
+    to listen. The Charm ensures that the music can be heard anywhere within 100 times her successes in
+    yards; natural acoustics may carry the song further, at the Storyteller’s discretion. (Note that while only
+    animals of the same kind as the target are certain to come, anyone and anything with ears can follow the
+    music if they like.) Once they arrive, the summoned animals will stand or lie near the Princess, quietly
+    listening, as long as she performs; when she stops, the Charm ends and the beasts revert to their normal
+    behavior in the following turn.</p>
+<p><b>Upgrade: Calling (Legno •••)</b><br>
+    The Princess may perform for an animal that is not within sight, provided she knows it well. Apply
+the Intimacy modifier to the chosen target; animals of that species will come to hear her.
+</p>
+</div>
+
+<button type="button" class="collapsible">Font of Truth (Connect ••• Acqua ••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Intelligence + Expression - Commonality<br>
+<b>Cost:</b> 1 Wisp<br>
+<b>Duration:</b> 1 scene</p>
+<p>A student of Acqua must tell the truth, but mere honesty doesn’t convince everyone. The Noble can
+    clothe the truths she speaks with magic that makes her honesty clear to all. She may invoke this Charm
+    on a person or a social group by applying Commonality.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Noble achieves the opposite of her intent: those who hear her assume she lies.
+    She takes the Cursed Condition and suffers a -2 penalty on Social rolls to communicate or persuade
+    people for the rest of the scene, and may not use the Charm again until then.<br>
+    <i>Failure:</i> The Noble’s words are as convincing as usual, no more and no less.<br>
+    <i>Success:</i> The Princess smooths out her social connections, removing obstructions and letting all see
+    hear her intent clearly. Any mundane attempt by the target determine if she is telling the truth (as
+    she understands it) becomes an automatic Exceptional Success.<br>
+    <i>Exceptional Success:</i> The Noble’s honesty begets trust. The target takes the Fresh Impressions
+    Condition and sets the Impressions one level higher than they would otherwise be.
+</div>
+<p><b>Drawback: </b>If the Princess is dishonest her targets will have little trouble seeing through her lies.</p>
+</div>
+
+<button type="button" class="collapsible">Ferryman's Shroud (Connect ••• Lacrima •)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Composure + Athletics<br>
+<b>Cost:</b> 2 Wisps, Compromise at Belief 7+ with no modifer<br>
+<b>Duration:</b> instant</p>
+<p>The Queen of Tears has deemed that all Princesses are entitled to the freedom of her city. To use this
+    Charm, the Princess must be in complete darkness; light bright enough to see by, from any source, makes
+    the Charm fail.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Noble touches the Dark World through her magic instead of Alhambra. The
+    Compromise roll for the Charm takes a -2 penalty, and the Noble cannot use the Charm again for one
+    full day.<br>
+    <i>Failure:</i> The Noble stays where she is.<br>
+    <i>Success:</i> The darkness the Noble stands in thickens to an utter negation of light for an instant;
+    then the ground vanishes and she falls, splashing into the black salt lake of Alhambra. The Charm is generally considerate enough to drop her near a shore, where she can reach dry land in a single turn.
+    It doesn’t, however, have to leave her in a specific place within the city; she may have to walk an hour
+    or two to reach the district she wanted.<br>
+    <i>Exceptional Success:</i> The Noble appears in Alhambra, at the nearest shore to the place she wants to
+    be.
+</div>
+<p>The Charm will not take anyone back from Alhambra - the Queen of Tears does not wish anyone to
+leave her who has not proven their fidelity to the true Kingdom
+As an incidental benefit, those who learn this Charm can light lamps in Alhambra as its citizens do...
+it’s not clear why.</p>
+<p><b>Upgrade: Driven</b><br>
+<b>Cost: </b> 1 Wisp/every 5 points of size above size 5<br>
+The Princess can drive a vehicle into Alhambra, carrying along all its contents. She takes a penalty
+on the activation roll of -2 for 5 points of the vehicle’s Size exceeding 5; that is, a Size 10 vehicle takes
+a -2 penalty, a Size 15 vehicle takes -4, and so on. As with the basic effect, the vehicle must be in
+darkness to travel, and will arrive over water; most Hopeful using this Charm travel in boats.</p>
+<p>If she rolls a dramatic failure, the Princess cannot use the Charm for one full day.</p>
+<p><b>Upgrade: Returning (Lacrima •••)</b><br>
+    The Princess may use the Charm to travel from Alhambra to a place she knows well; apply the Intimacy
+modifier for the destination. As with the basic Charm, the upgrade only works in complete darkness
+(and in Alhambra that carries risk; see the rules in that section.) On the other hand, activating the
+Charm to leave Alhambra is not a sin against Belief at any level.</p>
+    <p>The followers of Tears only teach this Charm to people who have proven their loyalty to Alhambra,
+        but nothing other than the Lacrima Prerequisite and the risk of retaliation prevents anyone else from
+        learning the Charm.</p>
+</div>
+
+<button type="button" class="collapsible">Mirror Walk (Connect •••• Specchio ••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Dexterity + Athletics, modified by Intimacy<br>
+<b>Cost:</b> 3 Wisps<br>
+<b>Duration:</b> instant</p>
+<p>A simple trick but a very useful one. The Princess targets two mirrors before stepping into one
+    and out the other. Both mirrors must be large enough for her to fit through. Intimacy is measured to
+    place the Princess wishes to arrive at, if it has no Mirrors large enough to squeeze out of the Charm
+    automatically fails and the Princess knows why. If it has more than one suitable mirror than the Princess
+    can choose to rive at any mirror she knows about. The Intimacy modifier applies to the place the Princess
+    wishes to arrive at, but she must know the exact location of the mirror she is to arrive at.</p>
+<p>The Charm cannot cross between realms. This may not be used to gain either egress or entrance to
+    Alhambra, nor may it be used to exit or leave the hisil of the shapeshifters, the twisted thorn-world of the
+    fae-folk, or any other such hidden place. However, should a Princess find herself in any of these alternate
+    worlds, it may be used for transit within them if such a thing is possible within the alien dimension.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess enters the mirror, but gets lost. She rolls Wits + Composure each
+    turn after using the Charm; when she succeeds, she emerges from the mirror she left. If the mirror is
+    shatters in the interim she emerges somewhere nearby.<br>
+    <i>Failure:</i> Nothing happens.<br>
+    <i>Success:</i> The Princess transports herself to the target mirror.<br>
+    <i>Exceptional Success:</i> When the Princess emerges, she may immediately move up to her Speed, even if
+    she had to move to reach the mirror she left.
+</div>
+<p><b>Upgrade: Leading</b><br>
+<b>Cost: </b> +1 Wisp per additional person<br>
+With this Upgrade the Princess can now lead others through mirrors. Each extra person or 5 Size
+points of equipment beyond what she can carry costs an additional Wisp.
+</p>
+<p><b>Upgrade: Seeking (Specchio •••)</b><br>
+    With this Upgrade the Princess can use her Intimacy modifier to a person or object instead of a place.
+    She will arrive at the nearest appropriate mirror, assuming their is one in Inner Light x50 yards.
+</p>
+<p><b>Upgrade: Writ of Passage</b><br>
+    The Princess learns how to combine her magical mirrors with complementary magic to travel beyond
+the world. If she knows a Charm, Edict or Privilege that allows access to another world, or she works
+with someone who does, then she may use Mirror Walk and travel to a mirror in that world, Intimacy
+permitting. Doing so requires that the activation cost of the other power be paid in full. She may also
+use Writ of Passage to return from other worlds –though some worlds are infamous for being easier to
+enter than to escape.</p>
+<p>The ability Enter Darkness, known to all creatures of the Darkness can be used to walk to a Mirror in
+    the Dark World. Ferryman’s Shroud cannot be used to enter Alhambra, the city’s defences are strict
+    about what may enter. Realms without physical substance, such as the Dreamlands, are never valid
+    destinations for Mirror Walk.
+</p>
+</div>
+
+<button type="button" class="collapsible">Charms of Entwined Destiny (Connect •••• Invocation •••)</button>
+<div class="content">
+<p><b>Action:</b> Extended<br>
+<b>Dice Pool:</b> Manipulation + Empathy (30 minutes/roll, threshold = Princess’ Willpower),
+modified by Intimacy<br>
+<b>Cost:</b> 2 Wisps, 1 Willpower<br>
+<b>Duration:</b> 1 month</p>
+<p>In a lengthy ceremony, invoking all she knows of him, the Princess weaves the thread of her fate into
+    another’s, becoming an exemplar in his life of one of the Queens. Each Queen teaches a different version
+    of this Charm, with her favored Invocation as a prerequisite; these versions must be learned as separate
+    Charms.</p>
+<p>Unlike natural Entwined Destinies there is no guarantee that the people involved are suited for new
+    connection with each other. Even if the target actively resists the effects of selfish or incompetent uses
+    of this Charm can be seriously unethical, harmful and just all round messy. Likewise, unlike natural
+    Entwined Destinies the Princess doesn’t automatically modify the subject of the Charm’s fate. When
+    Fate itself wants to bring two people together it has no reason not to work both ends. When a Princess
+    uses magic to twist fate she finds it’s easier to work on her own.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess cannot use the Charm on the target for 1 month, and suffers a -2
+    penalty to all Social rolls involving him during that period.<br>
+    <i>Failure:</i> The Princess makes no progress. If she does not reach the threshold, she cannot use the
+    Charm on the target again for 1 week.<br>
+    <i>Success:</i> The Princess makes progress. When she reaches the threshold, the target gains the Blessing
+    Condition. The Blessing creates the Entwined Destiny Merit, with the appropraite relationship and
+    the target of the Princess’ choice.<br>
+    <i>Exceptional Success:</i> The Princess makes great progress tying her destiny to the target’s.
+</div>
+<p>The five versions of the Charm each confer a different form of Entwined Destiny:</p>
+<ul>
+    <li><b>Better Living Through Education (Acqua) - Mentor.</b> The Princess gains Willpower when she has
+taught the target something important, and takes penalties if she passes up an opportunity to
+educate.</li>
+    <li><b>Manic Pixie Dust (Aria) - Gadfly.</b> The Princess gains Willpower when she exposes the target to
+unusual situations (for him) or alters the pattern of his life in a benign fashion, and takes penalties
+if she ignores a chance to do so. Doing the target permanent or serious harm does not fall under
+the Destiny.</li>
+    <li><b>Red String of Fate (Fuoco) - Lover.</b> The Princess gains Willpower when she has furthered the
+target’s love for her, and takes penalties if she misses a chance to do so. The love in question need
+not be erotic or marital, but it must involve mutual affection and trust.</li>
+    <li><b>Under Ursa’s Star (Legno) - Guardian.</b> The Princess gains Willpower when she rescues the target
+from harm, and takes penalties if he is harmed when she is present.</li>
+    <li><b>Great Expectations (Terra) - Sponsor.</b> The Princess gains Willpower when her target’s social
+standing improves, and takes penaltes if she lets a chance to help him rise go by.</li>
+</ul>
+<p><b>Upgrade: Proxy (Invocation ••••)</b><br>
+    The Princess can weave the thread of another person’s life. The threshold for doing so is the Willpower
+    of the person being given an Entwined Destiny, and the Intimacy modifier is either the Princess’
+    connection to that person, or to the Destiny’s subject, whichever is worse. If either person being given
+    a Destiny is not willing to accept the role the Charm gives him, the Princess suffers the effects of a
+    dramatic failure towards him.
+</p>
+<p><b>Upgrade: Mutual (Fuoco ••••)</b><br>
+    Requires Red String of Fate<br>
+    <b>Cost: </b>1 Willpower<br>
+    When the Princess casts Red String of Fate both herself and her beloved gain an Entwined Destiny of
+lovers to each other. The two destinies are the natural compliment such as motherly love to daughterly
+love, or romantic love to romantic love. If the target does not give informed consent the Princess suffers
+a Dramatic Failure.
+</p>
+<p><b>Upgrade: Taut</b><br>
+    <b>Cost: </b>+1 Wisp<br>
+    The thread that ties the Princess to her target pulls them together. The Princess and her target gain
+the Entwined condition. The strenght of the link is equivalent to an Intimate connection of Love,
+regardless of the connection they had before. When the Charm ends their Intimacy returns to it’s
+natural level.
+</p>
+</div>
+
+<button type="button" class="collapsible">The Old Allegiance (Connect ••••, Lacrima •••)</button>
+<div class="content">
+<p><b>Action:</b> Extended<br>
+<b>Dice Pool:</b> Presence + Intimidation (30 minutes/roll, threshold = target’s Willpower), modified
+by Sympathy<br>
+<b>Cost:</b> 2 Wisps, 1 Willpower<br>
+<b>Duration:</b> 1 month</p>
+<p>It is right and proper, the Last Empress teaches, for the Nobility to reward those who serve the Light,
+    and punish those who refuse to serve. In a lengthy ceremony, invoking all she knows of him, the Princess
+    weaves the thread of another person’s fate, calling him to assist her in her labors.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess cannot use the Charm on the target for 1 month, and suffers a -2
+    penalty to all Social rolls involving him during that period.<br>
+    <i>Failure:</i> The Princess makes no progress. If she does not reach the threshold, she cannot use the
+    Charm on the target again for 1 week.<br>
+    <i>Success:</i> The Princess makes progress. When she reaches the threshold, the target’s fate makes him
+    a loyal servant of an organisation of the Princess’ choice, until the Charm ends. The target gains
+    Willpower when his actions serve the organisation’s goals, and suffers penalties when he flouts them,
+    or ignores them to serve another goal. Most Ravens use this Charm to instill loyalty to Alhambra.<br>
+    <i>Exceptional Success:</i> The Princess makes great progress weaving the target’s destiny.
+</div>
+<p>Unlike the Radiant Queens’ Charms of Entwined Destiny, it is perfectly possible to use The Old Allegiance
+    on an unwilling target. It is however a Belief compromise to do so, the modifier is at -3 (note that this
+    isn’t Lacrima’s Drawback, it’s just very unethical). Further degeneration checks may be called for if the
+    Princess takes advantage of people she has woven a destiny for. As a general rule, it doesn’t count as
+    consent if they’re only saying it as a result of an artificial destiny.</p>
+<p><b>Upgrade: Collective (Lacrima ••••)</b><br>
+<b>Cost: </b> 1 Willpower<br>
+The Princess may bind all of a social group to her goals at once. When she reaches the threshold, all
+the members of the target group who see her are affected. The Charm is modified by Commonalty of
+the target group, instead of by Sympathy.
+</p>
+</div>
+
+<button type="button" class="collapsible">Ultimate Fidelity (Connect •••• Tempesta •••)</button>
+<div class="content">
+<p><b>Action:</b> Extended<br>
+<b>Dice Pool:</b> Resolve + Composure (1 minute/roll, threshold = 11 - Belief)<br>
+<b>Cost:</b> 1 Willpower<br>
+<b>Duration:</b> indefinite</p>
+<p>The original Sworn Guard and the One-Who-Became-Storms swore this oath when they stood before
+    the gates of the last city of the Kingdom, alone against the hordes of the Darkness. And they retain it.
+    The Alhambrans know nothing of it; why would those treacherous curs know anything about loyalty or
+    devotion? This was an oath of the Army of the Kingdom, not the soft weaklings who betrayed it from
+    within.</p>
+<p>When using the Charm, the Princess declares a Cause. This may be anything that can be described
+    in a sentence or so, consisting of an end-goal that is important to her. For example, “Kill the sixfingered
+    man who killed my father” is a valid target, while ”Buy some milk from the shops ” is almost
+    certainly not. The Princess repeats these words over and over again, drumming them until they become
+    all-consuming. The Charm is complete when the scars blossom across her chest, spelling out the Cause
+    for all who would see. Whenever the Princess advances the Cause; finding a list of men with six fingers,
+    finding which one he is, finding where he lives, watching his routines, breaking into his house, she gains
+    one Willpower. At most one Willpower per scene.</p>
+<p>In addition, the Princess cannot be dissuaded; she doubles her appropriate Resistance Attribute
+    against any attempts, whether mundane or supernatural, to prevent her from fulfilling the Cause. This
+    covers things like torture, which would double Stamina, just as much as Composure might be used
+    against magical mind-control or mundane persuasions. However, the Cause consumes those who have
+    willingly sworn it. When faced with a choice between advancing or fulfilling the Cause, or taking another
+    action, the Princess rolls Resolve + Composure. If she succeeds , she may perform the other action;
+    otherwise she must continue with the Cause, and ignore the other situation, even if it would seem to be
+    more important to an objective observer.</p>
+<p>Once the Cause has been accomplished, the Princess regains the Willpower dot lost when swearing
+    to it. If it becomes impossible to attain the Cause for any reason (say, the six-fingered man dies before
+    they can get their revenge), not only does she not regain the Willpower dot, she must roll Resolve +
+    Composure, with each success inflicting one point of resistant aggravated damage, as her soul seeks
+    redemption in coruscating flames that erupt from her mouth and burn at the tongue that swore an oath
+    it could not uphold.</p>
+<p><b>Upgrade: Proxy (Tempesta ••••)</b><br>
+<b>Cost: </b> 2 Wisps from the caster, 1 Willpower from the target<br>
+The Princess may use the Charm to seal another person to a Cause they willingly swore to. The target
+is affected as if he had cast it himself.
+</p>
+</div>
+
+<button type="button" class="collapsible">Standing on a Pedestal (Connect •••• Specchio •••)</button>
+<div class="content">
+<p><b>Action:</b> Extended<br>
+<b>Dice Pool:</b> Presence + Persuasion (30 minutes/roll, threshold = target’s Willpower), modified
+by Intimacy<br>
+<b>Cost:</b> 2 Wisps, 1 Willpower<br>
+<b>Duration:</b> 1 month</p>
+<p>In a lengthy ceremony, invoking all she knows of him, the Princess weaves the thread of another person’s
+    fate into hers, giving him opportunities to prove himself worthy of her.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess gains the Yandere Condition focused on the target.<br>
+    <i>Failure:</i> The Princess makes no progress. If she does not reach the threshold, she cannot use the
+    Charm on the target again for 1 week.<br>
+    <i>Success:</i> The Princess makes progress. the target gains the Blessing Condition. The affected trait is
+    the Entwined Destiny Merit.<br>
+    <i>Exceptional Success:</i> The Princess makes great progress tying her destiny to the target’s.
+</div>
+<p>The target’s Entwined Destiny makes him a seeker for the Princess’ approval; she can choose what
+    kind of favor he is destined to seek. He may be a romantic suitor, and fulfil the destiny when he earns
+    a sign of her affections. He may seek her social favor, and fulfil the destiny when she compliments him
+    on his apparel, or invites him to a party. He may even seek her intellectual favor, and fulfil the destiny
+    when she publicly approves of an idea he had. The general rule is that the target gains Willpower when
+    the Princess chooses to bestow a sign of her approval upon him, and suffers penalties when he refuses an
+    opportunity to seek the Princess’ favor. He does not suffer penalties when he makes a genuine attempt
+    to win her favour, regardless of how the Princess reacts.</p>
+<p>Unlike the Radiant Queens’ Charms of Entwined Destiny, it is perfectly possible to use Standing on
+    a Pedestal on an unwilling target. It is however a Belief Compromise with a -3 penalty to do so (it is not
+    a compromise to use it against targets who give informed consent). Further degeneration checks may
+    be called for if the Princess takes advantage of people she has woven a destiny for. As a general rule, it
+    doesn’t count as consent if they’re only saying it as a result of an artificial destiny.</p>
+<p><b>Upgrade: Collective (Specchio ••••)</b><br>
+<b>Cost: </b> +1 Willpower<br>
+The Princess may bind many favor-seekers to herself at once, if they are all present. The Charm is
+modified by Commonalty of the target group, which must include the Princess, instead of by Intimacy.
+</p>
+<p><b>Upgrade: Taut</b><br>
+    <b>Cost: </b> +1 Wisp<br>
+    The thread that ties the Princess to her target pulls them together. The Princess and her target gain
+the Entwined condition. The strength of the link is equivalent to an Intimate connection of Love,
+regardless of the connection they had before. When the Charm ends their Intimacy returns to it’s
+natural level.
+    </p>
+</div>
+
+<button type="button" class="collapsible">Becoming the Fulcrum (Connect ••••• Aria ••••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Wits + Investigation<br>
+<b>Cost:</b> 3 Wisps, 1 Willpower<br>
+<b>Duration:</b> 1 scene</p>
+<p>With a gust of air the Princess’ eyes see open to strange sights. As Spades’ avatar she see how everything
+    fits together and how those connections can be exploited with the slightest touch to make great change.
+    She gains the Living Fulcrum Condition. The Princess may make mundane instant actions (they must
+    use a Finesse Attribute) and record the Successes. At any time she may reflexively apply the recorded
+    successes as a bonus or penalty to any roll for someone she can see - the sticky cake she threw onto the
+    ceiling falls of and lands on the Brat just as she was starting to brag.</p>
+<p>The Princess may store a one roll per Aria and she may modify any number of rolls per turn, but
+    she may only apply one modifier to any given roll.</p>
+<p>While the Princess wears the mantle of Spades she is permanently surrounded by gusts of wind. It
+    smells of exotic lands and is as elegant and chaotic as the Queen herself. The Princess also gains the
+    Invocation Lock Condition keyed to Aria.</p>
+</div>
+
+<button type="button" class="collapsible">Call for Aid (Connect •••••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Presence + Persuasion<br>
+<b>Cost:</b> 3 Wisps, 1 Willpower<br>
+<b>Duration:</b> Lasting</p>
+<p>The Princess reaches across time to send out a call for aid and bends fate to guide her allies swiftly to
+    her side. She rolls Presence + Persuasion.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess feels a sudden crushing sense of abandonment and the shock forces
+    her to make a Sensitivity roll.<br>
+    <i>Failure:</i> The Princess cannot reach her allies. The Charm fails.<br>
+    <i>Success:</i> After invoking this Charm the Princess may immediately begin making rolls to ask Allies
+    for help, and may roll once for every instance of the Allies Merit. The messages sent travel back in
+    time, and fate ensures that the aid provided will arrive within the current Scene or at a designated
+    future Scene. That warrior lodge of Darkspawn hunters the Princess met in the uncharted heart of the
+    Amazon rainforest? Turns out they knew a shaman who can arrange transportation through the spirit
+    world and they’ll show up in the heart of London ready to fight. The chef you saved from bankruptcy?
+    Well an army marches on it’s stomach. This Charm cannot do the impossible, but it is very powerful
+    magic and can accomplish the improbable.<br>
+    As with all uses of the Allies merit the Princess will be expected to be there for her allies in turn.
+Especially if they had to go far out of their way.<br>
+    <i>Exceptional Success:</i> When rolling to summon allies the Princess applies 8again.
+</div>
+</div>
+
+<button type="button" class="collapsible">Wearing a Heavy Crown (Connect ••••• Terra ••••)</button>
+<div class="content">
+<p><b>Action:</b> Instant<br>
+<b>Dice Pool:</b> Presence + Persuasion, modified by Commonalty<br>
+<b>Cost:</b> 1 Wisp, 1 Willpower<br>
+<b>Duration:</b> 1 scene</p>
+<p>To be the Queen of Hearts’ avatar is to become the leader people need, the leader the people may one
+    day deserve. The Princess assumes that role and leads any who will follow to greatness. This Charm is
+    used on members of a social group who are willing to work at the Princess’ direction, or towards a goal
+    that she has set. She can let others come up with plans (what leader doesn’t have advisers?) but the
+    final decision of what the members do must rest on her shoulders alone.</p>
+<div class="failsucc">
+    <i>Dramatic Failure:</i> The Princess proves herself unworthy of leadership and may not use Terra again for
+    11 - Belief days.<br>
+    <i>Failure:</i> The Princess cannot claim a crown. The Charm fails.<br>
+    <i>Success:</i> The Princess undergoes a second transformation; a heavy crown appears upon her brow. All
+    members of the target group gain the Light’s Unity condition, the maximum is equal to the Princess’
+    activation successes. Also, when the targeted people or a subset of them are working as a team to
+    carry out the Noble’s plans, each secondary actor adds dice equal to the number of actors on the team
+    or the Noble’s activation successes (whichever is less) to the dice they contribute to the primary actor’s
+    roll. (For example, in a team of 3, the 2 secondary actors can contribute up to 3 dice, for a total of 6,
+    beyond the dice from their rolls.)<br>
+    The Princesses leadership also motivates her followers to stand together in the face of adversity, they
+also get the Blessing Condition. The affected trait is Resolve, when it is used to resist being dissuaded
+from following the Princess’ plan. The Blessing increases their Resolve to the same dots as the Princess’
+Presence (if they have a higher Resolve than the Princess’ Presence they get no blessing).<br>
+    <i>Exceptional Success:</i> Everyone blessed by this Charm also gains a free point of Willpower.
+</div>
+<p><b>Drawback: </b> The Princess gains the Burden of Leadership Condition: She gains 8again on Sensitivity
+    rolls when someone blessed by this Charm is hurt attempting to follow her orders or does something
+    shocking in the process of following the Princess’ leadership. In addition, if anyone blessed by this Charm
+    causes her to face a Belief compromise through setting a Bad Example, she does not halve or double the
+    perpetrator’s modifier when making her own Compromise roll.<br>
+    She also gains the Invocation Lock condition keyed to Terra.
+</p>
+</div>
+<div class="bottomline"></div>
+</div>
+
+<div id=Fight class="tabcontent">
+<p>The Fight Charms enhance a Princess’ ability to fight. Only Champions have affinity for them.</p>
+        
+<button type="button" class="collapsible">Empty Hand (Fight •)</button>
+<div class="content">
+    <p><b>Action:</b> Permanent<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> none<br>
+        <b>Duration:</b> Permanent
+    </p>
+    <p>Many of the Hopeful have weapons in their Regalia, but some prefer to master control over the ability to
+        inflict harm. She may apply an Invocation to rolls to start grappling, to her maneuvers within a grapple,
+        and to rolls to touch an opponent without hurting him.</p>
+    <p><b>Upgrade: Binding</b><br>
+        <b>Cost: </b> 1 Wisp<br>
+        The Princess is never without a way to harmlessly restrain her foes for she can manifest the necessary
+        equipment by spending a Wisp; it has a Durability equal to her Inner Light or any applied Invocation.
+        She must still roll like normal to tie her target up.
+    </p>
+    <p><b>Upgrade: Crushing</b><br>
+        While grappling, the Princess delivers immense force in her grasp. She may do either lethal or bashing
+        damage to her opponent, once she has a hold on him.
+    </p>
+    <p><b>Upgrade: Grasping</b><br>
+        Stacks, up to 3<br>
+        Whenever the Princess may apply an Invocation because of the Charm, she always adds a +1 equipment
+        bonus for each time she takes this upgrade.
+    </p>
+    <p><b>Upgrade: Penetrating (Acqua •)</b><br>
+        The Princess knows how to put opponents out of action quickly. When she applies Acqua to a
+        grappling roll, and does damage to her opponent, she rolls dice equal to the damage done. If she gets
+        any successes, her opponent must roll his Stamina; if he fails this roll, he is frozen for turns equal to
+        the damage done.
+    </p>
+    <p><b>Upgrade: Disarming (Aria ••)</b><br>
+        The Princess knows how to put opponents out of action quickly. When she applies Acqua to a
+        grappling roll, and does damage to her opponent, she rolls dice equal to the damage done. If she gets
+        any successes, her opponent must roll his Stamina; if he fails this roll, he is frozen for turns equal to
+        the damage done.
+    </p>
+    <p><b>Upgrade: Blistering (Fuoco ••)</b><br>
+        During a grapple, the Princess’ skin and clothes grow hot to the touch. In each turn that she applies
+        Fuoco, her opponent automatically takes 1 bashing damage, in addition to any results of manuevers
+        that turn.
+    </p>
+    <p><b>Upgrade: Entrancing (Legno ••)</b><br>
+        The Princess’ opponents, if once they touch her, find it strangely hard to do anything that would
+        really injure her. During a grapple, in any turn the Princess applies Legno, any roll her opponent
+        makes that would damage her, either barehanded or with a weapon, is penalized by her Legno.
+    </p>
+    <p><b>Upgrade: Unbroken (Terra ••)</b><br>
+        The Princess stands unmoved, and her hold is almost impossible to escape. During a grapple, in any
+        turn that she applies Terra, any roll her opponent makes to break the grapple or to render her prone
+        is penalized by her Terra.
+    </p>
+    <p><b>Upgrade: Draining (Lacrima ••)</b><br>
+        The Princess’ mein unsettles anyone who comes too close. During a grapple, in any turn that she
+        applies Lacrima, her opponent must roll Resolve + Composure. If he fails, he cannot do anything that
+        turn but try to break the grapple, unless he spends 1 Willpower.
+    </p>
+    <p><b>Upgrade: Shove Nerds Into Lockers (Specchio ••)</b><br>
+        The Princess puts those beneath her back into their place with all the strength of an ogre. When she
+        starts grappling or makes a maneuver within a grapple she may reflexively spend a Wisp to increase
+        her dicepool by the higher of her target’s Intelligence or Academics.
+    </p>
+</div>
+
+    <button type="button" class="collapsible">Hold the Door (Fight •)</button>
+    <div class="content">
+        <p><b>Action:</b> Reflexive<br>
+            <b>Dice Pool:</b> Unrolled<br>
+            <b>Cost:</b> 1 Wisp<br>
+            <b>Duration:</b> Concentration
+        </p>
+        <p>The Princess throws herself against a door, holding it fast with her own body and magic. For as long
+            as she devotes herself to holding the door shut it’s Durability increases by her Stamina.</p>
+    </div>
+    
+    <button type="button" class="collapsible">Kensai (Fight •)</button>
+    <div class="content">
+        <p><b>Action:</b> Permanent<br>
+            <b>Dice Pool:</b> Unrolled<br>
+            <b>Cost:</b> none<br>
+            <b>Duration:</b> Permanent
+        </p>
+        <p>A melee weapon becomes part of the Princess’ Regalia, manifesting her courage and belief. Initially the
+            weapon’s Damage is 3 but when she attacks the Princess may apply an Invocation to add Damage or
+            additional dice to her pool, this stacks with any bonus dice from Upgrades. The damage can be either
+            Bashing or Lethal and the Princess can swap between them with a Transformation action. The princess
+            may also apply an Invocation to boost the weapon’s accuracy, adding the Invocation’s dots directly to
+            her attack Dicepool (boosting her weapon counts as the Princess boosting herself, so she may always
+            apply Specchio at a reduced Wisp cost). A Princess may wait until after the dice are rolled then boost
+            her accuracy or damage, once it is clear where her powers are most needed. If Princesses fight each other
+            with Kensai the Princess with the lowest initiative decides where to apply Invocations first. She may
+            not apply the same Invocation to both Damage and Accuracy in a single turn but she may apply two
+            different Invocations to gain both benefits unless she is using an Invoked Upgrade, which would limit her
+            to only applying the linked invocation.</p>
+        <p>The Princess chooses either Brawl or Weaponry as the Skill for using her weapon when she learns
+            the Charm. The weapon always has a Size between 1 and 4. For anyone but the Princess, the Initiative
+            penalty and the minimum Strength needed to use the weapon equals 3 + the Princess’ Inner Light. For
+            the Princess herself, both are 0 – as an extension of her beliefs, the weapon obeys her desires as well as
+            her own hands.</p>
+        <p><b>Upgrade: Accurate</b><br>
+            Stacks, up to 3<br>
+            The Princess wields her weapon with supernatural skill. Each time the Princess takes this upgrade,
+            she gains 1 bonus die when attacking with her weapon.</p>
+        <p><b>Upgrade: Cleave</b><br>
+            The Princess strikes with a strength or speed that defies physics, hitting multiple
+            targets. She may spend a Wisp to use the Autofire rules and attack with a medium burst. All her
+            targets must be within striking distance.</p>
+        <p><b>Upgrade: Clinging</b><br>
+            The Princess’ weapon helps her grapple her foes. Most weapons with this
+            upgrade resemble gloves or whips, but some Princess have more unusual ways of binding their foes like
+            pinning their shadow with a sword or weakening their control over their muscles with a boink to the
+            head.</p>
+        <p>With this upgrade a Princess can apply an Invocation to add dice to all mundane grappling rolls so
+            long as she is holding her Kensai weapon. If she attempts to do damage while grappling she can also
+            apply an Invocation to increase her Damage.</p>
+        <p><b>Upgrade: Durable</b><br>
+            The Princess’ weapon becomes nearly impossible to break. Add her Inner Light to the weapon’s
+            Durability.</p>
+        <p><b>Upgrade: Sword Beam</b><br>
+            The Princess’ weapon can strike at range using her usual dice pool. Doing so costs one Wisp, the
+            weapon range is (20/40/80), and she must apply any Invocations before rolling. Princesses who learn
+            this Upgrade are usually skilled Kensai specialists looking for a quick edge when they get into a corner.
+            Generalist Champions usually practice with both Kensai and Levinbolt, which sometimes also results
+            in sword beams.</p>
+        <p><b>Upgrade: Precise (Acqua ••)</b><br>
+            The Princess places her strokes with marvelous accuracy. If she applies Acqua, she may ignore up
+            to her Acqua in penalties from aiming at a specified target (see pp. 203 in the GMC) on top of the
+            Invocation bonus.</p>
+        <p><b>Upgrade: Swift (Aria ••)</b><br>
+            The Princess strikes quick as a flash, her weapon seems to disappear and reappear inside her opponent’s
+            flesh. If the Princess applies Aria to an attack, she gains Armour Piercing equal to her weapon’s
+            Damage + Aria, however this significantly reduces her weapon’s power reducing her weapon’s damage
+            to zero. She does gain one bonus die for any point of Armour Piercing above her opponents Armour
+            rating.</p>
+        <p><b>Upgrade: Burning (Fuoco ••)</b><br>
+            The Princess’ weapon erupts into flame. If she applies Fuoco to an attack, it gains the 9-again quality
+            and if the target is as flammable as dry wood it will likely catch fire.</p>
+        <p><b>Upgrade: Knockout (Terra ••)</b><br>
+            Strikes with the Princess’ weapon have the force of avalanches. If the Princess applies Terra to an
+            attack, the attack gains the Stun quality: the target’s Size is halved for the purpose of applying the
+            Stunned Tilt (GMC 212)</p>
+        <p><b>Upgrade: Soothing (Legno ••)</b><br>
+            If the Princess applies Legno to an attack, and a target takes damage from it, a dose of an opiate
+            enters his bloodstream, and he must roll his Stamina + Resolve - the Princess’ Legno. If he fails, he
+            suffers the Drugged Tilt. The magic ensures there are no after effects and no possibility of an allergic
+            reaction.</p>
+        <p><b>Upgrade: Draining (Lacrima ••)</b><br>
+            The Princess’ weapon draws shadows to itself, unsettling anyone with the bad luck to touch it. If she
+            applies Lacrima to an attack, and the target takes damage from the attack, he must roll Resolve +
+            Composure, and loses 1 point of Willpower if he fails. Using this upgrade is a Compromise at Belief
+            6+ with a -1 modifer.</p>
+        <p><b>Upgrade: Berserk (Tempesta ••)</b><br>
+            The Princess’ weapon’s blows come so furiously that they catch their targets by surprise. If she makes
+            an all-out attack with the weapon and applies Tempesta to the attack, she doesn’t get the normal +2
+            bonus; instead she subtracts her Defence from the target’s Defence (to a minimum of zero). If they
+            are enhancing their defence through Supernatural means, a Clash of Wills ensures.</p></div>
+
+<button type="button" class="collapsible">Javelot (Fight •)</button>
+<div class="content">
+    <p><b>Action:</b> Permanent<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> none<br>
+        <b>Duration:</b> Permanent
+    </p>
+    <p>A thrown weapon becomes part of the Princess’ Regalia, delivering the her will to harm from afar.
+        Compared to Levinbolt Javelot lacks raw damaging power but presents a verity of useful tactical options.
+        It can appear as nearly anything: A deck of playing cards, shuriken, seeds that grow into weapons during
+        flight. Regardless of the weapon’s form it is an aerodynamic weapon and the Princess uses the Athletics
+        skill to throw it. Initially the weapon’s Damage is 1 but this may be increased with Upgrades. When the
+        Princess attacks she may apply an Invocation to increase her accuracy, but not her weapon’s Damage.
+        Invocations must be applied before dice are rolled.</p>
+    <p>The weapon’s damage can be either Bashing or Lethal and the Princess can swap between them
+        with a Transformation action. The weapon always has a Size between 1 and 4. For anyone but the
+        Princess, the Initiative penalty and the minimum Strength needed to use the weapon both equal three
+        + the Princess’ Inner Light For the Princess herself, both are 0 - as an extension of her will, the weapon
+        obeys her desires as well as her own hands. Generally a Javelot cannot be caught by anyone except the
+        Princess, or a character with enough Armour to catch the knife by the blade as it were.</p>
+    <p><b>Upgrade: Accurate</b><br>
+        Stacks, up to 3<br>
+        The Princess wields her weapon with supernatural skill. Each time the Princess takes this upgrade,
+        she gains 1 bonus die when attacking with her weapon.</p>
+    <p><b>Upgrade: Damaging</b><br>
+        Stacks, up to 2<br>
+        Each time the Princess takes this upgrade, she adds 1 to her weapon’s Damage.</p>
+    <p><b>Upgrade: Spread</b><br>
+        Stacks, up to 2<br>
+        The Princess weapon comes in bulk, or bounces between her foes. She may spend a Wisp to perform
+        a short burst of autofire. With two purchases spending 1 Wisp allows the Noble to fire three short
+        bursts or one medium burst.</p>
+    <p><b>Upgrade: Breaking (Aria ••)</b><br>
+        The Princess’ weapon strikes the most vulnerable points. For the purposes of calculating whether an
+        attack Inflicts a Tilt it’s Damage is considered to be Aria points higher.</p>
+    <p><b>Upgrade: Beacon (Acqua ••)</b><br>
+        The Princess’ weapon remains in her target and glows like a beacon. The next mundane attack
+        (including Kensai, Levinbolt, and Javelot) takes a bonus equal to the lower of her Successes and her
+        dots in Acqua. After Acqua turns the bonus is wasted.</p>
+    <p><b>Upgrade: Revealing (Legno ••)</b><br>
+        The Princess’ weapon remains in her target and beings to telegraph it’s attack, warning anyone nearby
+        of his intentions. The target’s next action which directly harms someone takes a penalty equal to the
+        lower of the Princess’ Successes and her dots in Legno. After the target’s next action, regardless of
+        what action he takes, the effect ends.</p>
+    <p><b>Upgrade: Draining (Lacrima ••)</b><br>
+        The weapon drains the will of the target if it strikes home. If the Princess applies Lacrima to an attack,
+        and the target takes damage, he also loses 1 point of Willpower. Using this upgrade is a Compromise
+        at Belief 5+ with a -2 modifier.</p>
+    <p><b>Upgrade: Trickshot (Specchio ••)</b><br>
+        The Princess’s throws her weapon in an impossible shot. She might aim over her shoulder with a
+        mirror, ricochet the blade several times to her target or curve a boomerang around several corners.
+        She ignores up to her Specchio in penalties for long range, called shots, concealment and other similar
+        modifiers.</p>
+</div>
+
+<button type="button" class="collapsible">Levinbolt (Fight •)</button>
+<div class="content">
+    <p><b>Action:</b> Permanent<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> none<br>
+        <b>Duration:</b> Permanent
+    </p>
+    <p>A ranged weapon becomes part of the Princess’ Regalia, delivering the her will to harm from afar. It can
+        appear as nearly anything: wizards’ staffs, futuristic pistols, wands of ice. Even weapons that shouldn’t
+        function at long range, such as arbitrarily long spears and thrown daggers that fly like a rifle shot can
+        function as a Levinbolt. Regardless of the weapon’s form, the Princess uses the Firearms Skill to attack
+        with the weapon. Initially the weapon’s Damage is 2 but when she attacks the Princess may apply an
+        Invocation to add Damage or to boost her weapon’s accuracy, adding her dots in the Invocation to her
+        dice pool, this stacks with any damage or bonus dice from Upgrades. Invocations must be applied before
+        dice are rolled. The princess may not apply an Invocation to both Damage and accuracy in a single turn,
+        she may apply two different Invocations to gain both benefits unless she is using an Invoked Upgrade.</p>
+    <p>The weapon’s range is (20/40/80) * Inner Light in yards. The damage can be either Bashing or
+        Lethal and the Princess can swap between them with a Transformation action. The weapon always has
+        a Size between 1 and 4 but for rules purposes it is treated as size one; A Princess’ magical weapon is
+        never unwieldy in close quarters. For anyone but the Princess, the Initiative penalty and the minimum
+        Strength needed to use the weapon both equal three + the Princess’ Inner Light For the Princess herself,
+        both are 0. As an extension of her emotions, the weapon obeys her desires as well as her own hands.</p>
+    <p>Normally attacking with her Levinbolt weapon requires no Wisps, but a Princess can spend a Wisp
+        to make a short burst of Autofire.</p>
+    <p><b>Upgrade: Accurate</b><br>
+        Stacks, up to 3<br>
+        The Princess wields her weapon with supernatural skill. Each time the Princess takes this upgrade,
+        she gains 1 bonus die when attacking with her weapon.</p>
+    <p><b>Upgrade: Accurate</b><br>
+        Stacks, up to 3<br>
+        The Princess wields her weapon with supernatural skill. Each time the Princess takes this upgrade,
+        she gains 1 bonus die when attacking with her weapon.</p>
+    <p><b>Upgrade: Damaging</b><br>
+        When the Princess takes this upgrade she adds 1 to her weapon’s Damage.</p>
+    <p><b>Upgrade: Spread</b><br>
+        Stacks, up to 2<br>
+        The Noble’s weapon allows automatic fire. With one purchase, spending 1 Wisp allows the Noble to
+        fire three short bursts or one medium burst. A second purchase lets her fire short bursts at no cost,
+        and spending a Wisp lets her fire two medium bursts or one long burst. As with mundane firearms,
+        one turn of covering fire is equivalent to one medium burst.</p>
+    <p><b>Upgrade: Forceful (Acqua ••)</b><br>
+        In addition to taking damage from the weapon’s shot, a target is pushed away. If the Princess applies
+        Acqua to an attack, for each success, the target must succeed on a Stamina + Athletics - Acqua roll
+        or move half the Princess’ Speed away from her, unless pushed into an obstacle. Targets that hit an
+        obstacle are crushed against it, and take extra bashing damage. Roll 1 die for each success, minus 1
+        for each step of Speed/2 the target moved before impact (rounding up); the target takes 1 bashing
+        damage for each success on this roll.</p>
+    <p><b>Upgrade: Penetrating (Aria ••)</b><br>
+        The weapon’s shot guides itself around obstacles and penetrates protective clothing. If the Princess
+        applies Aria to an attack, she gains Armour Piercing equal to her weapon’s Damage + Aria, however
+        this significantly reduces her weapon’s power reducing her weapon’s damage to zero. She does gain
+        one bonus die for any point of Armour Piercing above her opponents Armour rating.</p>
+    <p><b>Upgrade: Burning (Fuoco ••)</b><br>
+        The Princess’ weapon erupts into flame. If she applies Fuoco to an attack, it gains the 9-again quality
+        and if the target is as flammable as dry wood it will likely catch fire.</p>
+    <p><b>Upgrade: Soothing (Legno ••)</b><br>
+        If the Princess applies Legno to an attack, and a target takes damage from it, a dose of an opiate
+        enters his bloodstream, and he must roll his Stamina + Resolve - the Princess’ Legno. If he fails, he
+        suffers the Drugged Tilt. The magic ensures there are no after effects and no possibility of an allergic
+        reaction.</p>
+    <p><b>Upgrade: Quaking (Terra ••)</b><br>
+        If the Princess applies applies Terra to an attack, the earth bucks under the target’s feet as the
+        weapon’s shot strikes him. In addition to taking damage, the target must succeed on a reflexive roll
+        of Dexterity + Athletics, penalized by -1 per success, or take the Knocked Down Tilt.</p>
+    <p><b>Upgrade: Dimming (Lacrima ••)</b><br>
+        The weapon’s shot assaults the will of the target if it strikes home. If the attack hits a target with
+        a Wisp pool (not including Bequests) they loose one Wisp. Using this upgrade is a Compromise at
+        Belief 6+ with a -1 modifier.</p>
+    <p><b>Upgrade: Irradiating (Tempesta ••)</b><br>
+        The Princess may increase the Damage of the weapon’s shot by inflicting resistant damage on herself.
+        1 level of bashing damage gives a +1 bonus, and 1 level of lethal damage gives a +3 bonus. The
+        Princess chooses whether to take bashing or lethal damage for each attack.</p>
+    <p><b>Upgrade: Trickshot (Specchio ••)</b><br>
+        The Princess’s weapon fires a bolt of pure light in an impossible shot. She might aim over her shoulder
+        with a mirror, ricochet the bolt several times to her target or shoot a target 100 foot away from the
+        hip. She ignores up to her Specchio in penalties for long range, called shots, concealment and other
+        similar modifiers.</p>
+</div>
+
+<button type="button" class="collapsible">Courteous Parry (Fight • Terra •)</button>
+<div class="content">
+    <p><b>Action:</b> Permanent<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> none<br>
+        <b>Duration:</b> Permanent
+    </p>
+    <p>A smile and pleasant voice disarms a Princess’ attackers, or a calculated remark at the right moment
+        throws them off-balance. When the Princess takes a Dodge action, she may choose to roll Manipulation
+        + Persuasion or Intimidation instead of rolling double her defence. Unfortunately, social acumen doesn’t
+        do anything to inhuman foes; against an animal, a spirit and similar beings the Princess’ Defence remains
+        at its base value, even when she dodges.</p>
+    <p><b>Upgrade: Instinctive</b><br>
+        Using social talent to evade injury becomes almost a reflex. When the Princess transforms, she may
+        choose to use her Manipulation + Persuasion or Intimidation instead of Wits, Dexterity and Athletics
+        when calculating Defence, again this only applies against attackers with a basically human mind. The
+        drawback, as before, is that against inhuman attackers she has no Defence without dodging. She may
+        return to normal Defence with a transformation action.</p>
+</div>
+
+<button type="button" class="collapsible">Scholar at Arms (Fight • Acqua •)</button>
+<div class="content">
+    <p><b>Action:</b> Permanent<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> none<br>
+        <b>Duration:</b> Permanent
+    </p>
+    <p>The Princess is a master of all weapons and never takes a penalty to using an unusual weapon she’s
+        never encountered before. If she finds an antiquated mortar and black powder in a museum she’ll be
+        measuring charges and finding ranges like a professional in no time.</p>
+</div>
+
+<button type="button" class="collapsible">Lighting Charge (Fight • Aria •)</button>
+<div class="content">
+    <p><b>Action:</b> Reflexive<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 Turn
+    </p>
+    <p>The Princess charges into battle with the speed of lightning, she may spend a Wisp to make a charge
+        action (CoD, p92) without sacrificing her Defence.</p>
+</div>
+
+<button type="button" class="collapsible">Shield Wall (Fight •• Terra •)</button>
+<div class="content">
+    <p><b>Action:</b> Reactive<br>
+        <b>Dice Pool:</b> Special<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 Turn</p>
+    <p>The Princess stands firm as a rock, and holds the line together. She spends one Wisp and uses her action
+        to activate the Charm for a turn, from that point onwards she forms the lynchpin of her team’s defence.
+        When one of her companions within Inner Light yards is attacked she may shout a warning, direct a
+        fighter to their ally’s aid or parry the blow herself.</p>
+    <p>To do this the Princess nominates a defender who must also be within Inner Light yards (the Princess
+        herself may be either the target of an attack or the defender but no one person can serve both rolls) and
+        rolls her Presence + the defender’s Brawl or Weaponry.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Noble’s clumsy move exposes her to attack without helping her ally. Her
+        Defence takes a -2 penalty during the current turn.<br>
+        <i>Failure:</i> The Noble’s parry is not effective.<br>
+        <i>Success:</i> ach activation success reduces the damage from the attack on its target by 1, to a minimum
+        of 0.<br>
+        <i>Exceptional Success:</i> The Noble’s parry confounds the attack so much that its target doesn’t notice
+        it. The ally’s Defence is not reduced by the countered attack.
+    </div>
+    <p>The Damage from any single attack can only be reduced from Shield Wall once, even if (especially
+        if) multiple Princesses are trying to direct the defensive line.</p>
+    <p><b>Drawback: </b>The defender looses a point of Defence for the reminder of the turn, as though they too
+        had been attacked. If they have sacraficed their defence this turn they cannot serve as a defender.</p>
+</div>
+
+<button type="button" class="collapsible">Strike False (Fight ••)</button>
+<div class="content">
+    <p>Requires: <i>Kensei</i> or <i>Levinbolt</i><br>
+        <b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Dexterity + Brawl, Firearms or Weaponry<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 scene</p>
+    <p>The Princess’ weapon becomes a phantom, creating the appearance of danger without inflicting actual
+        harm.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess’ attacks are real, but she is convinced they are not, and does not
+        realise otherwise until the Charm ends.<br>
+        <i>Failure:</i> The Princess’ attacks remain unchanged.<br>
+        <i>Success:</i> The Princess’ Regalia weaponry inflicts phantom damage The target suffers wound penalties
+        from this damage and risks unconsciousness if it fills the last box, as normal. However, the damage
+        is not real; it vanishes when the Charm ends as if it were healed, and if the target takes real damage
+        when the track is full, that damage replaces the phantom damage instead of wrapping over. Phantom
+        damage also has no effect if the target has no empty Health Boxes to fill. The phantom damage can
+        also be healed magically, or mitigated as it’s inflicted by targets who have that ability. Phantom
+        damages is removed at the end of the charm’s duration, and the Princess may reflexively end the Charm; restoring the lethal capacity of her weaponry and removing any phantom damage she has
+        caused.<br>
+        <i>Exceptional Success:</i> The Princess may choose whether to inflict normal or phantom damage for each
+        attack.
+    </div>
+    <p><b>Upgrade: Suggestive</b><br>
+        <b>Cost: </b> +2 Wisps<br>
+        Any Charm the Princess casts that inflicts damage inflicts phantom damage instead of normal damage.</p>
+</div>
+
+<button type="button" class="collapsible">You Might Hurt Yourself (Fight ••)</button>
+<div class="content">
+    <p>Requires: <i>Kensai</i><br>
+        <b>Action:</b> Reactive and Contested<br>
+        <b>Dice Pool:</b> Dexterity + Brawl or Weaponry vs Defense<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> Lasting</p>
+    <p>People ought to know better than to swing heavy or sharp objects around. When a foe close enough to
+        attack has a tool or weapon in hand, and is about to use it (on herself or anyone else) the Noble activates
+        this Charm. She must have both hands free but may reflexively drop anything she is holding to invoke
+        this Charm.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Noble leaves herself wide open to her target. If he attacks her in the next turn,
+        she cannot apply Defense.<br>
+        <i>Failure:</i> The Noble misses her catch.<br>
+        <i>Success:</i> The Noble takes hold of the target’s equipment and pulls it away, just before he does whatever
+        he meant to do. The object moves to her possession.<br>
+        <i>Exceptional Success:</i> The Noble’s theft is so well timed that the target actually tries to carry out his
+        intention without the necessary tool. He gets the Stunned Tilt [CofD 286].
+    </div>
+    <p><b>Upgrade: Confiscating (Acqua •••)</b><br>
+        Weapons and technology yield to the rule of the Philosopher Queen. In a fluid movement, the Princess
+        pulls her enemy’s weapon into her grasp and may make an action using it in the same turn</p>
+    <p><b>Upgrade: Replacing (Aria •••)</b><br>
+        The Princess places new equipment into her target’s hand as deftly as she removes the old. If the new
+        equipment is similar (such as replacing a gun with another gun loaded with blanks) the target will
+        attempt their original action using the new equipment. If the equipment is significantly different (such
+        as replacing a gun with a chicken drumstick) the target will only attempt to use it on an Exceptional
+        Success. This upgrade can be used outside of combat, and also allows the Princess to use Larceny
+        instead of Brawl or Weaponry.</p>
+</div>
+
+<button type="button" class="collapsible">Safety in Stillness (Fight •• Legno •)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Composure + Brawl<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 scene</p>
+    <p>The Princess stands unperturbed by the assaults of many foes. After activating the Charm, her Defense
+        is not reduced until she has taken (1 + her successes) attacks in a turn.</p>
+</div>
+
+<button type="button" class="collapsible">Seraphic Fury (Fight •• Tempesta ••)</button>
+<div class="content">
+    <p><b>Action:</b> Reflexive<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> 1 resistant lethal damage<br>
+        <b>Duration:</b> 1 turn</p>
+    <p>The Princess channels fire and fury through her veins into the flesh of an enemy of the Light. Her
+        weapon seeks the heart and severs arteries. She may activate the Charm when she attacks a creature
+        of the Darkness or a follower of Tears, before making the roll. If the attack hits the creature, it does
+        aggravated damage. Seraphic Fury may enhance Kensai, Levinbolt or any mundane weapon.</p>
+    <p><b>Upgrade: Discretionary (Tempesta ••••)</b><br>
+        The Princess judges for herself who the Light’s enemies are. She may use the Charm when attacking
+anyone - her enemy need not be a creature of the Darkness.</p>
+</div>
+
+<button type="button" class="collapsible">Guardian Angel (Fight •• Fuoco •)</button>
+<div class="content">
+    <p><b>Action:</b> Reactive<br>
+        <b>Dice Pool:</b> Strength + Presence<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> successes in turns or 1 scene</p>
+    <p>A true Heroine gladly risks her life to save another from harm. The Princess uses this Charm on
+        someone she can see; she cannot use it on herself, someone who is already using it, or anyone with a
+        Supernatural Advantage equal or greater to her Inner Light - 2.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess is struck by dizziness and loses strength, as if suffering a high fever.
+        She takes the moderate form of the Sick Tilt (GMC p. 212). The fever fades if the Princess rests long
+        enough to reduce the penalty to 0.<br>
+        <i>Failure:</i> Nothing happens.<br>
+        <i>Success:</i> Everyone who can see both the Princess and the target realizes that she has put him under
+        her protection; those who wish to harm him must first defeat her. For turns equal to the activation
+        successes, any character who attacks the target cannot apply Defense against an attack from the
+        Princess until their next action.<br>
+        <i>Exceptional Success:</i> The Princess’ protection lasts for the rest of the scene.
+    </div>
+    <p><b>Upgrade: Everyone's Angel (Fuoco ••)</b><br>
+        <b>Cost: </b> +1 Wisp<br>
+        The Princess offers her protection to members of a group that she can see, applying the Commonalty
+        modifier for that group; while the Charm lasts, anyone who attacks a member of that group loses his
+        Defense against the Princess until his next action.
+    </p>
+</div>
+
+<button type="button" class="collapsible">Contest of Champions (Fight •• Fuoco ••)</button>
+<div class="content">
+    <p><b>Action:</b> Reflexive and Contested<br>
+        <b>Dice Pool:</b> Presence + Intimidation vs Composure + Supernatural Advantage<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 fight
+    </p>
+    <p>In the midst of battle the Champion challenges her counterpart to single combat, drawing her foe away
+        from weaker targets.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess loses all Defense against the target for one turn.<br>
+        <i>Failure, or the Princess loses the roll:</i> Nothing happens.<br>
+        <i>Success, or the Princess wins the roll:</i> The Princess and her target both gain +1 Defence against all
+        attackers other than each other. In addition, if either chooses to do anything other than attack the
+        other in single combat, or perform some other action suited for single combat, she loses all defence
+        against her opponent for the turn and ends the charm.<br>
+        <i>Exceptional Success, and the Princess wins the roll:</i> As above, and the Princess immediately gains a
+        point of Willpower. If she chooses she may reflexively spend this point to make an Inner Strength roll.
+    </div>
+    <p><b>Upgrade: Arena of the Gods</b><br>
+        <b>Cost: </b> +1 Wisp<br>
+        When the Princess and her opponent close into melee range a ring of fire springs up around them. This
+        ring has a radius of 10 feet, and though the flames are only three foot tall they will burn anyone up to
+        ten feet in the air. If there is insufficient space the arena will shrink to accommodate it’s limitations,
+        and it will never form if anyone but the Princess and her opponent would be inside the ring. It may,
+        however, start small and grow out, pushing others away to give the champions room.
+    </p>
+    <p>The flames have the size of a bonfire and the heat of a bunson burner (WoD core p180), and can be
+        treated as normal flames except that they never ignite anything else and cannot be extinguished by
+        non-magical means.</p>
+    <p><b>Drawback: </b>Obviously enough, by invoking this Charm the Princess has cut off her escape with a big
+        wall of fire. This can by mitigated with charms like Barrier Jacket, but in a formal dual it is considered
+        cheating to exit the arena.</p>
+    <p><b>Upgrade: Radiant Victory</b><br>
+        <b>Cost: </b>+1 Wisp<br>
+        With the enemy’s champion defeated and their own champion claiming a heroic victory the fighters
+        are rallied and ready to turn the tide. They can add the winner’s Presence to their next roll. This
+        requires some storyteller judgement, as defeating an obviously inferior foe will not inspire anyone.
+    </p>
+    <p><b>Drawback: </b>If your opponent wins they gain the bonus.</p>
+</div>
+
+<button type="button" class="collapsible">Spite Strike (Fight •• Tempesta •)</button>
+<div class="content">
+    <p><b>Action:</b> Reflexive<br>
+        <b>Dice Pool:</b> Dexterity + Intimidation<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> Instant</p>
+    <p>None may strike a Fury without reprisal. The Princess is attacked, she may forgo her Defence and
+        activate Spite Strike. If she takes damage from the attack, she may retaliate against her attacker by
+        rolling her normal dicepool + the amount of damage received, the type of damage done is the type of
+        damage the Princess receives. The Princess must actually take damage – if she mitigates any of it by
+        spending Wisps, or if the attacker fails to inflict any damage, the Charm fails.</p>
+</div>
+
+<button type="button" class="collapsible">Befriending (Fight •• Specchio ••)</button>
+<div class="content">
+    <p><b>Action:</b> Reflexive<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> Instant
+    </p>
+    <p>The Queen of Mirrors wants everyone to get along, in service to the True Queen. Isn’t that nice?
+        Sadly, violence is sometimes necessary, but violence should always serve a higher cause, and bind people
+        together. If a character is defeated in combat by the Princess this Charm can be used to apply the Fresh
+        Impressions Condition to the target, no cost or roll is required. For one week the Condition sets their
+        Impressions to Good. Some storyteller discretion may be needed to define defeated.</p>
+    <p>This power does not work upon Creatures of the Darkness, not even Darkened. At the Storyteller’s
+        discretion other fundamentally evil beings may also be immune.</p>
+    <p><b>Upgrade: Slap, Slap, Kiss</b><br>
+        <b>Cost: </b> +1 Wisp<br>
+        Prove yourself superior, the Heirs say, and those you defeat must admire you. The Princess may spend
+        1 Wisp when she bests a foe to give him the Swooned Condition in addition to Befriending’s usual
+        effects.
+    </p>
+</div>
+
+<button type="button" class="collapsible">Cauterising (Fight •• Tempesta •••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> 2 Wisps, 1 Willpower<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>For the remainder of the scene any damage the Princess inflicts upon a Creature of the Darkness is
+        Resistant. Despite what the Furies believe about the Court of Tears, this Charm only affects monsters
+        that actually are of the Darkness (though that would include a Princess who temporarily transformed
+        herself into one through Lacrima magic).</p>
+    <p>The exception to this Charm is that it cannot enhance attacks caused by or reinforced by other
+        Invocations. If the Princess applies any Invocation but Tempesta or uses a non-Tempesta Invoked
+        Charm the damage can be healed like normal.</p>
+</div>
+
+<button type="button" class="collapsible">One Woman Warband (Fight •• Specchio •••)</button>
+<div class="content">
+    <p><b>Action:</b> Reactive<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 turn
+    </p>
+    <p>What’s more impressive than flamboyantly taking down an opponent without a scratch? Flamboyantly
+        taking down ten opponents. When this Charm is activated the Noble’s Defence is reduced to twice
+        her Specchio (if her Defence is already less than this, it’s unchanged.) However, when facing multiple
+        attackers, every attack after the first increases her Defence by 1 rather than decreasing it. She may
+        improve Defence with Willpower as normal.</p>
+    <p><b>Upgrade: Countered</b><br>
+        At the end of the turn the Princess may make one counter attack with a dicepool equal to the number
+        of people who attacked her this turn. If her target attacked her and missed this turn she gains a bonus
+        die.
+</div>
+
+<button type="button" class="collapsible">Willow’s Wisdom (Fight •• Legno ••)</button>
+<div class="content">
+    <p><b>Action:</b> Reflexive and Contested<br>
+        <b>Dice Pool:</b> Stamina + Brawl or Weaponry vs Dexterity + Athletics<br>
+        <b>Cost:</b> 2 Wisps<br>
+        <b>Duration:</b> Lasting
+    </p>
+    <p>Whenever a melee attack against the Princess misses her, the turtle can turn her foes own momentum
+        against them.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess takes the Knocked Down Tilt.<br>
+        <i>Failure:</i> The Princess’ maneuver amounts to nothing.<br>
+        <i>Success or Exceptional Success and the Princess wins the roll:</i> The Princess’ target takes the Knocked
+        Down Tilt.
+    </div>
+</div>
+
+<button type="button" class="collapsible">Load Cartridge (Fight •••)</button>
+<div class="content">
+    <p>Requires: <i>Kensei</i> or <i>Levinbolt</i>
+        <b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> 2 Wisps<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>The World of Darkness is full of strange and weird monsters, and sometimes a Princess’ magic isn’t
+        the right tool for the job. By taking a sample, at least the size of a bullet, of any mundane physical
+        material the Princess may load it into her Levinbolt or Kensai weapon. For the remainder of the scene
+        attacks with the enhanced weapon count as both the loaded material and magic and should be treated
+        appropriately when compared to a supernatural (or natural) weakness and when up against defences
+        that protect against specific materials. If Princess applies an Invoked Upgrade to her attack, the attack
+        counts as magical, the loaded material, and the Invocation’s element all at once.</p>
+    <p>Any Transformation action that modifies the Princess’ weapon will end this charm early.</p>
+    <p><b>Drawback: </b>The sample of material is consumed.</p>
+</div>
+
+<button type="button" class="collapsible">Flash Step (Fight ••• Aria •••)</button>
+<div class="content">
+    <p><b>Action:</b> Reactive<br>
+        <b>Dice Pool:</b> Wits + Athletics<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> Lasting
+    </p>
+    <p>The Princess dodges her foe’s attack so swiftly that, by the time it lands, she’s somewhere else. She may
+        activate Flash Step whenever she can Dodge an attack but may not use it more than Aria times in a
+        single scene.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Noble trips over her own feet. She loses Defence against the attack she was
+        avoiding.<br>
+        <i>Failure:</i> The Noble stays put, and defends against the incoming attack normally.<br>
+        <i>Success:</i> The Noble moves up to her Speed times (1 + activation successes) in yards; if this takes her
+        out of the attacker’s reach, the attack misses. On her next action, anyone she attacks is surprised and
+        must equal or exceed her activation successes on a Wits + Composure roll to apply Defence against
+        her.<br>
+        <i>Exceptional Success:</i> The Noble moves in the blink of an eye. On her next action, Defence does not
+        apply against her attack.
+    </div>
+</div>
+
+<button type="button" class="collapsible">Refutation in Arms (Fight ••• Acqua ••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant and Contested<br>
+        <b>Dice Pool:</b> Wits + Athletics, Brawl, Firearms, or Weaponry vs target’s Wits + Athletics, Brawl,
+        Firearms or Weaponry<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>The attacks of a fighter fall into patterns, and the Princess can read those patterns. The Princess
+        may activate this Charm against any opponent she has attacked or who has attacked her in the last
+        turn. The dicepool depends on which weapons are in use at the point the Charm was Invoked, so a
+        Pricness with an enchanted rifle fighting a Darkspawn with teath and claws will roll her Firearms and
+        her opponent will roll it’s Brawl.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess misreads her foe. For the rest of the scene, all her attacks on this
+        opponent take a -1 penalty, and she cannot use Refutation in Arms again.<br>
+        <i>Failure:</i> The Princess learns nothing from her foe’s movements.<br>
+        <i>Success:</i> The Princess gets the Blessing Tilt; all her attacks on this opponent gain a +1 bonus until
+        the Charm ends. In addition every turn she spends fighting that opponent increases the bonus by one
+        die, up to a maximum of Acqua times two.<br>
+        <i>Exceptional Success:</i> As above but the bonus starts at +2.
+    </div>
+    <p>For the purposes of this Charm “fighting an opponent” is defined as attacking that opponent, using a
+        Charm upon that opponent, taking an action designed to prevent the opponent’s action from succeeding,
+        or assisting one of her allies in doing any of the aforementioned actions.</p>
+    <p>The designated opponent must be the primary target of the Princesses action. If one Darkspawn plans
+        to use a trick which removes Defence so that the Princesses designated target can attack a defenceless
+        foe; then preventing the first Darkspawn’s action will not qualify. The Princess can still do so but it will
+        not change her calculative bonus.</p>
+    <p>A Princess can gain a bonus from this Charm against only one target at a time; if she uses it again
+        before the scene ends, the first use of the Charm ends immediately.</p>
+</div>
+
+<button type="button" class="collapsible">Tangling Vine (Fight ••• Legno ••)</button>
+<div class="content">
+    <p>Requires: <i>Empty Hand</i><br>
+        <b>Action:</b> Special<br>
+        <b>Dice Pool:</b> Unrolled<br>
+        <b>Cost:</b> 1 Wisp<br>
+        <b>Duration:</b> concentration
+    </p>
+    <p>A net of brambles, grasping vines, iron hard cloth, or some other magic forms in the Noble’s hands, and
+        she throws it at a target [CofD 90]; the net is not aerodynamic. If she succeeds, she entangles the target
+        in the net, and the brambles grapple him [CofD 89-90]. The Noble may spend her action in the next
+        and subsequent rounds maintaining the grapple, and may use any move except Take Cover or Restrain.
+        If the target Breaks Free, or the Noble takes any action other than maintaining the grapple, the Charm
+        ends. Essentially the Princess rolls to throw a net using the usual rules, and if she succeeded she may
+        use the mundane grappling rules at a distance.</p>
+    <p>If the Princess has the Charm Binding she may invoke it at any distance if she applies the Immobilized
+        tilt through grappling vine, and if the target is already Immobilized she may create the net, throw the
+        net and invoke Binding all in one turn. In Essence she uses Binding to make her net last until the target
+        breaks free.</p>
+    <p><b>Upgrade: Thorny</b><br>
+        The net grows sharp thorns; it may inflict lethal damage in the grapple.</p>
+    <p><b>Upgrade: Wide</b><br>
+        Stacks, up to 3<br>
+        <b>Cost: </b>+0-2 Wisps<br>
+        The net is broad enough to ensnare more than one person. Use the autofire rules [CofD 90]. The first
+        purchase gives the net the bonus of a short burst. The second purchase adds 1 Wisp to the cost, and
+        allows the equivalent of a medium burst. The third purchase adds 2 Wisps to the cost, and allows the
+        equivalent of a long burst. The Noble must use the same move on everyone caught in the net; if a
+        move doesn’t apply to a target, it’s wasted.
+    </p>
+</div>
+
+<button type="button" class="collapsible">Salted Wounds (Fight ••• Lacrima •••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Resolve + Medicine<br>
+        <b>Cost:</b> 2 Wisps, Compromise at Belief 5+ with a -2 modifier<br>
+        <b>Duration:</b> See text
+    </p>
+    <p>The Raven imbues her weapon with salty despair and resignation, when she next attacks the curse sinks
+        into the wounds and takes hold. When the Princess next strikes a target she gains the Inverse Curse Tilt, which penalises any attempts to heal the victim (by herself or others). The penalty is equal to the
+        amount of Lethal or Aggravated damage the Princess inflicts, after reductions, and lasts for one scene.
+        Healing the damage does not end the Curse, though specialised Charms such as Unweaving can do so.</p>
+</div>
+
+<button type="button" class="collapsible">Demilitirzation (Fight •••• Legno •••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Composure + Expression<br>
+        <b>Cost:</b> 3 Wisps, 1 Willpower<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>The greatest victory is the battle won without violence, and magic is good at sharing victory with all.
+        By calling upon the Matron of the Forests a Princess can snatch the weapons from her foes hands, but
+        she cannot do it without taking violence from her friends as well.</p>
+    <p>This Charm spreads the Anti-War Zone tilt to the surrounding environment, applying a penalty to
+        all combat rolls equal to the successes rolled.</p>
+</div>
+
+<button type="button" class="collapsible">Nova Strike (Fight ••••• Fuoco ••••)</button>
+<div class="content">
+    <p>Requires: <i>Levinbolt</i><br>
+        <b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Strength + Firearms<br>
+        <b>Cost:</b> 2 Wisps<br>
+        <b>Duration:</b> instant
+    </p>
+    <p>The Princess conjures a ball that explodes in a gout of consuming fire. The ball is an aerodynamic object
+        of Size 1, and is thrown normally for such objects; when it hits, it explodes with a blast area equal to
+        the Princess’ Inner Light and a Damage equal to her successes. The explosive is also an incendiary –
+        anything damaged by it ignites, and while the direct explosive damage is bashing, damage from fires set
+        by it is lethal. All such fires are mundane, though the explosive is not. The Princess may hold the ball
+        up to her Fuoco in turns, after which it explodes wherever it is.</p>
+</div>
+
+<button type="button" class="collapsible">Strength of Ten (Fight ••••• Terra •••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Presence + Expression<br>
+        <b>Cost:</b> 2 Wisps, 1 Willpower<br>
+        <b>Duration:</b> 1 turn
+    </p>
+    <p>Blows delivered by the Princess’ friends become steps in a great dance, and her strike against a foe is
+        its culmination. The Charm may be activated only during combat. For each activation success, add the
+        successes rolled for a mundane action by one character on the Noble’s side of the fight as a bonus to
+        her dice pool in the next turn, provided that her action that turn is a standard attack (an attack using
+        Kensai or Levinbolt counts). If the Princess does anything other than attack a foe as her next action,
+        she gains no benefit from the Charm. She must choose whether an eligible action is part of the attack
+        before the player for that character rolls. If a character rolls a dramatic failure on an action that’s part
+        of the attack, the Princess takes a -4 penalty to her dice pool.</p>
+</div>
+
+<button type="button" class="collapsible">The Finest Hour, the Last Hour (Fight ••••• Tempesta ••••)</button>
+<div class="content">
+    <p><b>Action:</b> Instant<br>
+        <b>Dice Pool:</b> Resolve + Composure<br>
+        <b>Cost:</b> 3 Wisps, 1 Willpower, 1 Resistant Aggravated Damage<br>
+        <b>Duration:</b> 1 scene
+    </p>
+    <p>The Princess draws upon the dedication and resolve the Seraphic General displayed during the fall, and
+        recreates her own lesser version of that courage to become Storms’ avatar.</p>
+    <div class="failsucc">
+        <i>Dramatic Failure:</i> The Princess is overcome with a feeling of utter futility and defeatism. She loses all
+        Willpower and must flee all combat for the scene. She is considered to have broken Tempesta’s ban.<br>
+        <i>Failure:</i> The Princess cannot focus.<br>
+        <i>Success:</i> The Princess enters a combat trance, a tranquil fury, or even a screaming hysteria. In this
+        state she is one of the most powerful and terrible combatants known to the Radiant. She gains the
+        Seraphic Fury Tilt: Any damage she inflicts is Aggravated, she gains temporary health equal to her
+        Inner Light + Resolve and every time she kills someone she believes to be in league with either the
+        Darkness or the Court of Tears she completely refreshes her Willpower and gains a single box of
+        temporary Health. There is no upper limit to her maximum health, in extreme cases a Fury could
+        continue fighting long after her body has been utterly destroyed (she would resemble an unusually
+        solid Goalenu at this point).<br>
+        <i>Exceptional Success:</i> The Princess develops such as strong aura of violence and power that her foes flee
+        at the very sight of her. She also gains the Terrifying tilt, the people affected are Mortals (including
+        minor templates like Sworn and Darkened) and Darkspawn.
+    </div>
+    <p><b>Drawback: </b> Once this Charm is active the Princess must fight to the death - she simply cannot
+        conceive of not fighting for as long as one foe remains standing. The Princess also gains the Invocation
+        Lock condition keyed to Tempesta.</p>
+</div>
+
+<div class="bottomline"></div>
 </div>
 
 </main>
