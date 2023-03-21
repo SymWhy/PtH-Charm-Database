@@ -89,6 +89,7 @@
         transition: 0.3s;
         font-size: 26px;
         font-family: Charm;
+        border-radius: 3px;
     }
 
     .tab button:active {
@@ -106,6 +107,78 @@
         border:1px ridge black;
     }
 
+    #appear{
+        background-color: #ffacbb;
+    }
+
+    #appear:active{
+        background-color:#ff9cae;
+    }
+
+    #bless{
+        background-color:#ffc7a2;
+    }
+
+    #bless:active{
+        background-color: #ffc29a;
+    }
+
+    #connect{
+        background-color: #ffeca1;
+    }
+
+    #connect:active{
+        background-color: #ffe990;
+    }
+
+    #fight{
+        background-color: #cef79c;
+    }
+
+    #fight:active{
+        background-color: #b7ee73;
+    }
+
+    #govern{
+        background-color: #aff7ff
+    }
+
+    #govern:active{
+        background-color: #8ef4ff
+    }
+
+    #inspire{
+        background-color: #add3ff;
+    }
+
+    #inspire:active{
+        background-color: #93c5ff;
+    }
+
+    #learn{
+        background-color: #c0afff;
+    }
+
+    #learn:active{
+        background-color: #b5a0ff;
+    }
+
+    #perfect{
+        background-color: #dbadff
+    }
+
+    #perfect:active{
+        background-color: #d399ff;
+    }
+
+    #restore{
+        background-color: #ffadf7;
+    }
+
+    #restore:active{
+        background-color: #ff9ef5;
+    }
+
 
 
 </style>
@@ -114,31 +187,31 @@
 <div class=header>Princess: Charm Database</div>
 <main>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Appear')">Appear</button>
+    <button id=appear class="tablinks" onclick="openTab(event, 'Appear')">Appear</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Bless')">Bless</button>
+    <button id="bless" class="tablinks" onclick="openTab(event, 'Bless')">Bless</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Connect')">Connect</button>
+    <button id="connect" class="tablinks" onclick="openTab(event, 'Connect')">Connect</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Fight')">Fight</button>
+    <button id="fight" class="tablinks" onclick="openTab(event, 'Fight')">Fight</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Govern')">Govern</button>
+    <button id="govern" class="tablinks" onclick="openTab(event, 'Govern')">Govern</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Inspire')">Inspire</button>
+    <button id="inspire" class="tablinks" onclick="openTab(event, 'Inspire')">Inspire</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Learn')">Learn</button>
+    <button id="learn" class="tablinks" onclick="openTab(event, 'Learn')">Learn</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Perfect')" id="defaultOpen">Perfect</button>
+    <button id="perfect" class="tablinks" onclick="openTab(event, 'Perfect')">Perfect</button>
 </div>
 <div class=tab>
-    <button class="tablinks" onclick="openTab(event, 'Restore')">Restore</button>
+    <button id="restore" class="tablinks" onclick="openTab(event, 'Restore')" id="defaultOpen">Restore</button>
 </div>
 
 <div id=Appear class="tabcontent">
