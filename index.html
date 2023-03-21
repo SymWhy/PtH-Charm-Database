@@ -11,19 +11,18 @@
 <title>Princess: The Hopeful, Charm Reference</title>
 <style>
     body{
-        background-color: rgb(255, 179, 232);
+        background-color: rgb(255, 255, 255);
         font-family: Cormorant Garamond;
     }
 
     main{
-        background-color:rgb(255, 255, 255);
         padding: 10px;
     }
 
     .header{
         font-family: Charm;
         font-size: 40px;
-        color: #fff;
+        color: #c72958;
         padding-bottom: 20px;
         padding-left: 10px;
     }
@@ -45,7 +44,7 @@
         border-bottom: none;
         text-align: left;
         outline: none;
-        background-color:rgb(234, 234, 234);
+        background-color:rgb(228, 228, 228);
     }
 
     .content {
@@ -61,7 +60,7 @@
         transition: max-height 0.2s ease-out;
         -moz-transition: max-height 0.2s ease-out;
         -o-transition: max-height 0.2s ease-out;
-        background-color:rgb(234, 234, 234);
+        background-color:rgb(246, 246, 246);
     }
 
     .failsucc{
@@ -82,101 +81,36 @@
     }
 
     .tab button {
-        background-color: inherit;
+        background-color: rgb(252, 252, 252);
         float: left;
-        border: none;
+        border: solid;
+        border-color:rgb(152, 97, 109);
+        border-width: 1px;
         padding: 2px 14px;
         transition: 0.3s;
         font-size: 26px;
         font-family: Charm;
+        color: rgb(150, 51, 72);
         border-radius: 3px;
     }
 
     .tab button:active {
-        background-color:rgb(255, 240, 250);
+        background-color:rgb(242, 237, 238);
     }
 
     .tabcontent {
         display: none;
         padding: 6px;
-        border: 1px;
-        border-top: none;
+        background-color: rgb(246, 246, 246);
+        margin-top: 10px;
+        border: solid;
+        border-color:rgb(152, 97, 109);
+        border-width: 1px;
+        border-radius: 2px;
     }
 
     table, th, td {
         border:1px ridge black;
-    }
-
-    #appear{
-        background-color: #ffacbb;
-    }
-
-    #appear:active{
-        background-color:#ff9cae;
-    }
-
-    #bless{
-        background-color:#ffc7a2;
-    }
-
-    #bless:active{
-        background-color: #ffc29a;
-    }
-
-    #connect{
-        background-color: #ffeca1;
-    }
-
-    #connect:active{
-        background-color: #ffe990;
-    }
-
-    #fight{
-        background-color: #cef79c;
-    }
-
-    #fight:active{
-        background-color: #b7ee73;
-    }
-
-    #govern{
-        background-color: #aff7ff
-    }
-
-    #govern:active{
-        background-color: #8ef4ff
-    }
-
-    #inspire{
-        background-color: #add3ff;
-    }
-
-    #inspire:active{
-        background-color: #93c5ff;
-    }
-
-    #learn{
-        background-color: #c0afff;
-    }
-
-    #learn:active{
-        background-color: #b5a0ff;
-    }
-
-    #perfect{
-        background-color: #dbadff
-    }
-
-    #perfect:active{
-        background-color: #d399ff;
-    }
-
-    #restore{
-        background-color: #ffadf7;
-    }
-
-    #restore:active{
-        background-color: #ff9ef5;
     }
 
 
@@ -212,6 +146,9 @@
     </div>
     <div class=tab>
         <button id="restore" class="tablinks" onclick="openTab(event, 'Restore')">Restore</button>
+    </div>
+    <div class=tab>
+        <button id="shape" class="tablinks" onclick="openTab(event, 'Shape')">Shape</button>
     </div>
 
 <div id=Appear class="tabcontent">
@@ -7031,7 +6968,7 @@ the Princess may ask:</p>
   evt.currentTarget.className += " active";
 }
 
-document.getElementById("restore").click();
+document.getElementById("appear").click();
 </script>
 
 </body>
